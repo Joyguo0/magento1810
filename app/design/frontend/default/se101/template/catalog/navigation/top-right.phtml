@@ -1,0 +1,30 @@
+
+ <div class="right-top-nav" >
+ <ul>
+    <li class="right-top">
+	<form id="search_mini_form" action="<?php echo $this->helper('catalogSearch')->getResultUrl() ?>" method="get">
+	<fieldset>
+	   <table height="33" cellspacing="0" cellpadding="0" border="0">
+	        <tbody>
+		  <tr>
+
+		    <td id="nav-search-field" align="left" width="200"> <input id="search" type="text" class="input-live-search" name="<?php echo $this->helper('catalogSearch')->getQueryParamName() ?>" value="<?php echo $this->helper('catalogSearch')->getEscapedQueryText() ?>" /></td>
+		   
+			<div id="search_autocomplete" class="search-autocomplete"></div>
+			<script type="text/javascript">
+			//<![CDATA[
+				var searchForm = new Varien.searchForm('search_mini_form', 'search', '<?php echo $this->__('search site...') ?>');
+				searchForm.initAutocomplete('<?php echo $this->helper('catalogSearch')->getSuggestUrl() ?>', 'search_autocomplete');
+			//]]>
+			</script>
+			</div>
+		  </tr>
+		</tbody>
+	    </table>
+	</fieldset>
+</form>
+    </li>
+</ul>
+</div>
+
+

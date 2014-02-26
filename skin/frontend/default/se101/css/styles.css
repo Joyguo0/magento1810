@@ -628,7 +628,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* TOP NAV *********************/
 
 #nav { position:relative;    z-index:997; font-family: Arial,Helvetica,sans-serif;
- background: -moz-linear-gradient(center top , #B82323 0%, #A51F1F) repeat scroll 0 0 rgba(0, 0, 0, 0);
+ background:#AE2121;
 width:80%;float: left;color: #FFFFFF;font-size: 14px;
     line-height: 1;
     list-style: none outside none;

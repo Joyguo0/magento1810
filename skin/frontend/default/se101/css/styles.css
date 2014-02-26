@@ -2031,7 +2031,7 @@ ul.level0:after,
 
 
 /* Top Right Navigation */
-.right-top-nav{float:right;  position:relative; z-index:111;  background: -moz-linear-gradient(center top , #B82323 0%, #A51F1F) repeat scroll 0 0 rgba(0, 0, 0, 0);
+.right-top-nav{float:right;  position:relative; z-index:111;  background:#AE2121;
     font-family: Verdana,helvetica,sans-serif;height:45px; width:20%;}
 
 /* glider */

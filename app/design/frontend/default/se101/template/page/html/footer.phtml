@@ -27,21 +27,49 @@
 
 <div class="footer-container">
     <div class="footer">
-
-         <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('community-block')->toHtml() ?>
-	 <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer-cms-links')->toHtml() ?>
-	 <div class="tag-newsletter">
-	     <?php echo $this->getChildHtml('tags_popular') ?>
-	     <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('secure')->toHtml() ?>
-	     <?php echo $this->getChildHtml('footer.newsletter') ?>
-	 </div>
-        <div style="text-align: center;">
-	    <img src="<?php echo $this->getSkinUrl('images/payment.gif') ?>" />
+        <div style="display:none">
+            <span>Design By</span>
+            <a href="http://www.shopexpert.cn">Shopexpert.cn</a><span>and</span>
+            <a href="http://www.cattheme.com">Cattheme.com</a>
         </div>
-
-        <address><?php echo $this->getCopyright() ?></address>
-	<div style="display:none"><span>Design By</span>
-	<a href="http://www.shopexpert.cn">Shopexpert.cn</a><span>and</span>
-	<a href="http://www.cattheme.com">Cattheme.com</a></div>
+        <p id="footerLinks">
+        <a href="#">Privacy/Security Policy</a>
+        |
+        <a href="#">Customer Service</a>
+        |
+        <a href="#">Shipping/Returns</a>
+        |
+        <a href="#">How To Order</a>
+        |
+        <a href="#">About Us</a>
+        |
+        <a href="#">Firefighter.com Blog</a>
+        <br>
+        <a href="#">Account Registration</a>
+        |
+        <a href="#">Forgot Password</a>
+        |
+        <a href="#">Account Login</a>
+        |
+        <a href="#">Logoff</a>
+        |
+        <a href="#">PoliceLocker.com</a>
+        |
+        <a href="#">Size Chart</a>
+        |
+        <a href="#">SiteMap</a>
+    </p>
+    <p id="footerInfo">
+        Firefighter.com Inc, 7925 SW Jack James Drive Suite A, Stuart, FL 34997
+        <br>
+        Email
+        <a href="#">sales@firefighter.com</a>
+        with any comments or questions.
+        <br>
+        Copyright © 1999-2013,
+        <a href="#">Firefighter.com Inc.</a>
+        – All Rights Reserved
+    </p>
     </div>
+    
 </div>

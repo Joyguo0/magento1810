@@ -283,7 +283,6 @@ class Bestmagento_Magemenu_Block_Navigation extends Mage_Core_Block_Template
 				$html[]='<div class="shadow-bottom">';
 				$html[]='<div class="nav-inner">';
 			}
-			$my++;
 			if ($childrenWrapClass) {
                 $html[] = '<div class="' . $childrenWrapClass . '">';
             }

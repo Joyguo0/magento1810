@@ -16,7 +16,7 @@ if (is_array($_categories)) {
 }
 
 ?>
-<div class="categories-img-title"><span><?php echo $this->__('Featured Categories') ?></span></div>        
+<div class="categories-img-title"><span><?php echo $this->getTitle() ?></span></div>        
 <div class="listing-catalogimg-grid catalogimg-listing">
     <?php $i=0; foreach ($_categories as $_category): 
         if (!$_category->getIsActive()): continue; endif;

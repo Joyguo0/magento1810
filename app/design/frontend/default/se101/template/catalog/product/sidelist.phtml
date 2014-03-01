@@ -31,11 +31,9 @@
  * @see Mage_Catalog_Block_Product_List
  */
 ?>
-
 <div class="block block-hot-products block-hot-products2">
 <img alt="" src="<?php echo Mage::getDesign()->getSkinUrl('images/Hot-Spot.jpg'); ?>">  
 <div class="block-content">
-
 <?php $_productCollection=$this->getLoadedProductCollection() ?>
 
 
@@ -54,6 +52,7 @@
 	      <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>"><?php echo $this->htmlEscape($_product->getName()) ?></a>
 	      </div>
               <p class="home-price"><?php echo $this->getPriceHtml($_product, true) ?></p>
+		<button onclick="window.location='<?php echo $_product->getProductUrl() ?>'" class="button btn-cart" title="Add to Cart" type="button"><span><span>Add to Cart</span></span></button>
 		
             </div>
 	    <div class="clearer"></div>

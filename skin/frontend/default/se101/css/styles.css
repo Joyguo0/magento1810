@@ -2191,7 +2191,7 @@ legend {
 .footer address{font-size:12px; text-align:center;margin-top:10px;}
 
 /* Easy Categories Images */
-.category-images{overflow:hidden; width:623px;}
+.category-images{overflow:hidden; width:623px; margin-top:10px;}
 .category-images ol ul{padding-left:15px; }
 .category-images ol h2{font-size:13px; font-weight:bold; margin:3px 0;}
 .category-images ol ul li{list-style:disc; line-height:15px;}

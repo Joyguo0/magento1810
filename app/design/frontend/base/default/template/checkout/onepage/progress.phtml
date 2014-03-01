@@ -30,6 +30,7 @@
     </div>
     <div class="block-content">
         <dl>
+        <?php Mage::log(print_r($this->getCheckout()->getStepData(),1));?>
             <?php if ($this->getCheckout()->getStepData('billing', 'is_show')): ?>
             <div id="billing-progress-opcheckout">
                 <?php echo $this->getChildHtml('billing.progress') ?>

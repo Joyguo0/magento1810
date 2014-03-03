@@ -2294,7 +2294,7 @@ legend {
 { opacity: 0.5; filter: alpha(opacity=50); }
 .scoller-products .slider-wrapper {
     clear: both;
-    width: 880px;
+    width:583px;
     margin-left: 40px;
     overflow: hidden;
     position: relative;

@@ -43,7 +43,7 @@
         <div class="main-container col2-left-layout">
             <div class="main">
                 <?php echo $this->getChildHtml('breadcrumbs') ?>
-                <div class="col-main <?php if($this->getRequest()->getRouteName()=='catalog'){echo 'col-main-two';}?>">
+                <div class="col-main col-mainR <?php if($this->getRequest()->getRouteName()=='catalog'){echo 'col-main-two';}?>">
                     <?php echo $this->getChildHtml('global_messages') ?>
                     <?php echo $this->getChildHtml('content') ?>
                 </div>

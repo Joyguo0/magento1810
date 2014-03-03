@@ -2325,7 +2325,7 @@ legend {
 .scoller-products .slider-wrapper .list-featured .price-box { float: left; width: 75px; padding: 2px 0; }
 .scoller-products .slider-wrapper .scoller-price .price{font-weight:bold;}
 
-/* 添加的 */
+/* æ·»åŠ çš„ */
 .top-banner-right img{display:none;}
 .col-main-two{
 	width:802px;
@@ -2344,3 +2344,4 @@ legend {
 #footerLinks {
     line-height: 1.7em;
 }
+.no-boder{border:none;}

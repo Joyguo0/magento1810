@@ -20,7 +20,7 @@ if (is_array($_categories)) {
     $_collectionSize = $_categories->count();
 } 
 ?>
-<div class="listing-catalogimg-grid catalogimg-listing">   
+<div class="listing-catalogimg-grid catalogimg-listing no-boder">   
     <?php $i=0; foreach ($_categories as $_category): 
         if (!$_category->getIsActive()): continue; endif;
         $cur_category=Mage::getModel('catalog/category')->load($_category->getId());

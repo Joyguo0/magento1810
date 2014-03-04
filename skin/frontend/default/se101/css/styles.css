@@ -104,6 +104,7 @@ ul,ol         { list-style:none; }
 .col-left { float:left; width:166px;margin-left:10px;border: 1px solid #C7C6C4;}
 .sidebar{border:0;width:168px;}
 .col-main { float:left; width:628px; margin:0 10px; }
+.col-mainR{width:802px;}
 .col-right {/*border: 1px solid #C7C6C4;*/
     float: left;
     margin-left: 10px;
@@ -1180,7 +1181,7 @@ color: #FFFFFF;font-size: 12px;
 .product-collateral {  padding:15px 0; }
 .product-collateral h2 { font-weight:bold; font-size:13px; height:18px; color:#A72D2C; border:1px solid #ddd; padding:5px 0 5px 15px; margin:0 0 15px;     background: url("../images/sprite_repeat.gif") repeat-x scroll 0 0 transparent;}
 .product-collateral .box-collateral { margin:0 0 15px; }
-.product-collateral .product-collateral-left{width:735px; float:left;}
+.product-collateral .product-collateral-left{width:623px; float:left;}
 .product-collateral .product-collateral-right{width:200px; float:right;}
 
 /* up-sell block */ 
@@ -2293,7 +2294,7 @@ legend {
 { opacity: 0.5; filter: alpha(opacity=50); }
 .scoller-products .slider-wrapper {
     clear: both;
-    width: 880px;
+    width:583px;
     margin-left: 40px;
     overflow: hidden;
     position: relative;

@@ -27,16 +27,18 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
+
+<?php echo $this->getChildHtml('store_language') ?>
+
 <div align="CENTER" style="margin:5px 0px;"><font face="" size="+1" color="White"><b><i>Lots of NEW T-shirts and EMS Watches! Check Out What's New.</i></b></font></div>
 
 <div class="header-container">
     <div class="header">
 		<?php echo $this->getChildHtml('topLinks') ?>
 		<a href='<?php echo Mage::getBaseUrl()?>'><img alt="" src="<?php echo Mage::getDesign()->getSkinUrl('images/FF-Web-Header.gif'); ?>"></a>
-        <div class="header-middle">
-
-        </div>
+        
         <?php echo $this->getChildHtml('topContainer'); ?>
+		
     </div>
      <?php echo $this->getChildHtml('topMenu') ?>
      

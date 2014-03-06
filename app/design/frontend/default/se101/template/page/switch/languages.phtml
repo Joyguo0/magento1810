@@ -33,10 +33,11 @@
 ?>
 <?php if(count($this->getStores())>1): ?>
 <div class="language-switcher">
-    <label for="select-language"><?php echo $this->__('Choose your language') ?>: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <?php foreach ($this->getStores() as $_lang): ?>
+    <div class="language-switcherA">
+    <?php foreach ($this->getStores() as $k=>$_lang): ?>
         <?php $_selected = ($_lang->getId() == $this->getCurrentStoreId()) ? 'selected"selected"' : '' ?>
-        <a class="<?php echo $_selected ?>"  href="<?php echo $_lang->getCurrentUrl() ?>"><?php echo $this->htmlEscape($_lang->getName()) ?></a>&nbsp;·&nbsp;    
+        <a class="<?php echo $_selected ?>"  href="<?php echo $_lang->getCurrentUrl() ?>"><?php echo $this->htmlEscape($_lang->getName()) ?></a>　<?php if(($k+1)!=count($this->getStores())){echo '|';}?> &nbsp;&nbsp;    
     <?php endforeach; ?>
+    </div>
 </div>
 <?php endif; ?>

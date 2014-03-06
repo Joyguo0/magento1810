@@ -2346,3 +2346,6 @@ legend {
     line-height: 1.7em;
 }
 .no-boder{border:none;}
+.language-switcher{width:1000px;margin:0 auto;overflow:hidden;}
+.language-switcherA{color:#FFF;width:252px;height:37px;line-height:37px;float:right;background:url(../images/bgIndexNav.png) no-repeat;text-align: center;}
+.language-switcherA a{color:#FFF;font-size:14px;}

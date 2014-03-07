@@ -52,7 +52,7 @@
 	      <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>"><?php echo $this->htmlEscape($_product->getName()) ?></a>
 	      </div>
               <p class="home-price"><?php echo $this->getPriceHtml($_product, true) ?></p>
-		<button onclick="window.location='<?php echo $_product->getProductUrl() ?>'" class="button btn-cart" title="Add to Cart" type="button"><span><span>Add to Cart</span></span></button>
+		<button onclick="window.location='<?php echo $_product->getProductUrl() ?>'" class="button btn-cart" title="<?php echo $this->__('Add to Cart') ?>" type="button"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
 		
             </div>
 	    <div class="clearer"></div>

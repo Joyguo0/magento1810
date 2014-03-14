@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <report translate="title" module="reports">
+            <title>Reports</title>
+            <sort_order>80</sort_order>
+            <children>
+                <domstreams translate="title" module="reports">
+                    <title>Domstreams</title>
+                    <action>adminhtml/report_shopcart/customer</action>
+                    <sort_order>10</sort_order>
+                </domstreams>
+            </children>
+        </report>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <report translate="title" module="reports">
+                        <title>Reports</title>
+                        <sort_order>80</sort_order>
+		                <domstreams translate="title" module="reports">
+		                    <title>Domstreams</title>
+		                    <action>adminhtml/report_shopcart/customer</action>
+		                    <sort_order>10</sort_order>
+		                </domstreams>
+	            </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

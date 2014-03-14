@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+    <plugin_owa_index>
+        <reference name="content">
+            <block type="adminhtml/template" name="myform" template="owa.phtml"/>
+        </reference>
+    </plugin_owa_index>
+</layout>

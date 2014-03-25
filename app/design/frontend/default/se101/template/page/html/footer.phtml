@@ -24,42 +24,9 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-
 <div class="footer-container">
     <div class="footer">
-        <p id="footerLinks">
-        <a href="#">Privacy/Security Policy</a>
-        |
-        <a href="#">Customer Service</a>
-        |
-        <a href="#">Shipping/Returns</a>
-        |
-        <a href="#">How To Order</a>
-        |
-        <a href="#">About Us</a>
-        |
-        <a href="#">Firefighter.com Blog</a>
-        <br>
-        <a href="#">Account Registration</a>
-        |
-        <a href="#">Forgot Password</a>
-        |
-        <a href="#">Account Login</a>
-        |
-        <a href="#">Logoff</a>
-        |
-        <a href="#">PoliceLocker.com</a>
-        |
-        <a href="#">Size Chart</a>
-        |
-        <a href="#">SiteMap</a>
-    </p>
-    <p id="footerInfo">
-        Email
-        <a href="#">sales@firefighter.com</a>
-        with any comments or questions.
-        <br><?php echo $this->getCopyright() ?>
-    </p>
+	 <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_links')->toHtml();?>
     </div>
     
 </div>

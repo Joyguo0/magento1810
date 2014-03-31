@@ -26,7 +26,7 @@
 /* Reset ================================================================================= */
 * { margin:0; padding:0; }
 
-body          {  background: url("../images/flames-repeat.jpg")repeat-x scroll center top #000000;font:11px/150% Arial,Helvetica,sans-serif; color:#666; text-align:left; }
+body{  background: url("../images/flames-repeat.jpg")repeat-x scroll center top #000000;font:11px/150% '微软雅黑'; color:#666; text-align:left; }
 
 img           { border:0; vertical-align:top; }
 
@@ -159,7 +159,6 @@ button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
 
 
 button.button { border:0; padding:0; margin:0; background:transparent; /* line-height:21px; */ overflow:visible; cursor:pointer; vertical-align:middle; }
-
 a.button,
 button.button span,
 a.button span,
@@ -252,7 +251,7 @@ button#send2 span{ padding:0 0 0 10px; }
 .opc .button span span,
 .quick-find .button span span,
 button.btn-cart span span,
-button#send2 span span{ padding:0 15px 0px 5px; color:#fff; font-weight:bold; height:19px; text-transform:none; line-height:16px;}
+button#send2 span span{ padding:1px 15px 0px 5px; color:#fff; font-weight:bold; height:19px; text-transform:none; line-height:16px;}
 
 
 /* End of All Buttons */
@@ -630,12 +629,16 @@ tr.summary-details-excluded { font-style:italic; }
 /* TOP NAV *********************/
 .nav-container{width:80%;float: left;}
 #nav { position:relative;    z-index:997; font-family: Arial,Helvetica,sans-serif;
- background:#AE2121;
-color: #FFFFFF;font-size: 12px;
+ 	background:-moz-linear-gradient(center top , #B82323 0%, #A51F1F);
+ 	-moz-box-sizing: border-box;
+    border-radius: 3px;
+	color: #FFFFFF;font-size: 12px;
     line-height: 1;
     list-style: none outside none;
     margin: 0;
     padding: 0;
+	margin-right:-5px;
+	/*box-shadow: 0 0 2px rgba(40, 40, 40, 0.4) inset;*/
   }
 
 /* All Levels */ /* Style consistent throughout all nav levels */
@@ -1967,7 +1970,7 @@ ul.level0:after,
 .search_term ul.term-list li a{font:italic 11px Tahoma}
 .search_term ul.term-list li.icon-term{font:italic 11px Tahoma}
 .search_term{padding-left:20px; width:472px; float:left;}
-.input-live-search {border: medium none;color: #838383;margin: 0 0 0 10px;vertical-align: top;width: 150px;height:25px;}
+.input-live-search {border: medium none;color: #838383;margin: 0 0 0 10px;vertical-align: top;width: 150px;height:15px;border:1px solid #BCBBBB;box-shadow:0 1px 2px rgba(0, 0, 0, 0.1) inset;padding: 4px 4px 4px 6px;border-radius: 3px;}
 #search_mini_form table, #search_mini_form td, #search_mini_form th{vertical-align:middle}
 
 
@@ -2036,7 +2039,11 @@ ul.level0:after,
 
 /* Top Right Navigation */
 .right-top-nav{float:right;  position:relative; z-index:111;  background:#AE2121;
-    font-family: Verdana,helvetica,sans-serif;height:45px; width:20%; line-height:45px}
+    font-family: Verdana,helvetica,sans-serif;height:45px; width:20%; line-height:45px;background:-moz-linear-gradient(center top , #B82323 0%, #A51F1F);
+ 	-moz-box-sizing: border-box;
+    border-radius: 3px;
+	/*box-shadow: 0 0 2px rgba(40, 40, 40, 0.4) inset;*/
+}
 
 /* glider */
 .top-banners{height:180px;margin-bottom:8px;}

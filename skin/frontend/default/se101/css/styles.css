@@ -30,7 +30,7 @@ body{  background: url("../images/flames-repeat.jpg")repeat-x scroll center top 
 
 img           { border:0; vertical-align:top; }
 
-a             { color:red; text-decoration:none; }
+a             { color:#CC0000; text-decoration:none; }
 a:hover       { text-decoration:underline; }
 :focus        { outline:0; }
 .clear {clear: both;}

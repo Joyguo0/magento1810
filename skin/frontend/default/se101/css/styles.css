@@ -2218,6 +2218,8 @@ legend {
 .listing-catalogimg-grid {overflow: hidden; zoom: 1; width:auto;border:1px solid #C00;border-top:0;padding:10px 15px;}
 /*.listing-catalogimg-grid .grid-row {border:1px solid #CC0000;overflow: hidden;width:621px;border-top:0;}*/
 .listing-catalogimg-grid li.item { float:left; padding:12px 15px; line-height:1.6em; overflow:hidden; text-align:left;}
+.listing-catalogimg-grid li.item li a{color:#666;}
+.listing-catalogimg-grid li.even{border-right:1px solid #CCC;border-left:1px solid #CCC;}
 .listing-catalogimg-grid .last { border-bottom:0 none;}
 
 .col-3-layout .listing-catalogimg-grid li.item {width:138px;}

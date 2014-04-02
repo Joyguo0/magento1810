@@ -1163,3 +1163,4 @@
 "to","至"
 "website(%s) scope","网站（%s）范围"
 "{{base_url}} is not recommended to use in a production environment to declare the Base Unsecure URL / Base Secure URL. It is highly recommended to change this value in your Magento <a href=""%s"">configuration</a>.","不建议在生产环境中使用 {{base_url}} 检测 Base Unsecure URL / Base Secure URL。强烈建议在您的 Magento <a href=""%s"">配置</a>中更改该值。"
+"Plugin","页面跟踪"

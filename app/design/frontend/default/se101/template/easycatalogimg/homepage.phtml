@@ -24,7 +24,7 @@ if (is_array($_categories)) {
         $imageUrl = $cur_category->getImageUrl();
         if (empty($imageUrl)): $imageUrl = Mage::getBaseUrl('media').'catalog/category/np_thumb2.gif'; endif;
     ?>
-    <?php if($i++%$columnsCount==0): ?>
+    <?php if($i++==$columnsCount): break;?>
         <ol class="grid-row">
     <?php endif; ?>
         <li class="item">
@@ -79,7 +79,7 @@ if (is_array($_categories)) {
      <div class="clear">&nbsp;</div>
     <?php endif; ?>
     <?php endforeach ?> 
-    <script type="text/javascript">decorateGeneric($$('.grid-row'), ['last', 'odd', 'even']);</script>
+    <script type="text/javascript">decorateGeneric($$('.item'), ['last', 'odd', 'even']);</script>
 </div>
         
 <?php endif; ?>

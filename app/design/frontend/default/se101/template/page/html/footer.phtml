@@ -34,7 +34,7 @@
 <!-- Start Open Web Analytics Tracker -->
 <script type="text/javascript">// <![CDATA[
 var owa_cmds = owa_cmds || [];
-<?php if(Mage::getBaseUrl()=='http://115.29.237.104/owa/'){?>
+<?php if($_SERVER['SERVER_ADDR']=='115.29.237.104'){?>
 	var owa_baseUrl = 'http://115.29.237.104/owa/';
 	owa_cmds.push(['setSiteId', 'a2eda01e19e2dd612f28e4562a2e648d']);
 <?php }else{ ?>

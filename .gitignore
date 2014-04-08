@@ -20,3 +20,5 @@
 /skin/frontend/default/default/mw_developertoolbar/images/close_window.gif
 /skin/frontend/default/default/mw_developertoolbar/images/hide.gif
 /skin/frontend/default/default/mw_developertoolbar/images/show.gif
+/.buildpath
+/.settings/org.eclipse.php.core.prefs

@@ -89,8 +89,8 @@
             <?php endif; ?>
 
             <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
-            <div class="payment_option"><span>Payment Option:</span>
-		<img src="<?php echo $this->getSkinUrl('images/payment-options.gif') ?>" />
+            <div class="payment_option"><span><?php echo get_class($this); $this->__('Payment Option:') ?></span>
+			<img src="<?php echo $this->getSkinUrl('images/payment-options.gif') ?>" />
 	     </div>
 
 
@@ -145,22 +145,30 @@
                     }
                 }
             }.bind(productAddToCartForm);
+            jQuery(function() {
+            	jQuery( "#tabs" ).tabs();
+              });
     //]]>
     </script>
     </div>
 
 <div class="product-collateral">
-   <div class="product-collateral-left">
-	<?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
-		<div class="box-collateral <?php echo "box-{$alias}"?>">
-		    <?php if ($title = $this->getChildData($alias, 'title')):?>
-		    <h2><?php echo $this->escapeHtml($title); ?></h2>
-		    <?php endif;?>
-		    <?php echo $html; ?>
-		</div>
-	<?php endforeach;?>
-		<?php echo $this->getChildHtml('product_additional_data') ?>
-		<?php echo $this->getChildHtml('product_review') ?> 
+   <div class="product-collateral-left" id='tabs'>
+   		  <ul>
+		    <li><a href="#tabs-1"><?php echo $this->__('description');?></a></li>
+		    <li><a href="#tabs-2"><?php echo $this->__('review');?></a></li>
+		    <li><a href="#tabs-3"><?php echo $this->__('month order review');?></a></li>
+		  </ul>
+		  <div id="tabs-1">
+		  	<?php echo $_product->getDescription();?> 	
+		  </div>
+		  <div id="tabs-2">
+		    <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
+		     <?php echo $this->getChildHtml('product.info.product_additional_data') ?>
+		  </div>
+		  <div id="tabs-3">
+		  	<?php echo $this->getLayout()->createBlock('magemenu/orders')->setTemplate('catalog/product/view/orders.phtml')->toHtml(); ?> 
+		  </div>
     </div>
     <div class="product-collateral-right">
                 <?php echo $this->getChildHtml('product.related') ?>

@@ -161,13 +161,13 @@
 		  </ul>
 		  <div id="tabs-1">
 		  	<?php echo $_product->getDescription();?> 	
-		  </div>
-		  <div id="tabs-2">
-		    <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
 		     <?php echo $this->getChildHtml('product.info.product_additional_data') ?>
 		  </div>
+		  <div id="tabs-2">
+		    <?php echo $this->getChildHtml('product_review') ?> 
+		  </div>
 		  <div id="tabs-3">
-		  	<?php echo $this->getLayout()->createBlock('magemenu/orders')->setTemplate('catalog/product/view/orders.phtml')->toHtml(); ?> 
+		  	<?php echo $this->getLayout()->createBlock('magemenu/orders')->assign('productname', $_product->getName())->setTemplate('catalog/product/view/orders.phtml')->toHtml(); ?> 
 		  </div>
     </div>
     <div class="product-collateral-right">

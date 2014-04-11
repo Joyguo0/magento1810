@@ -27,7 +27,7 @@ class TM_EasyCatalogImg_Helper_Image extends Mage_Core_Helper_Abstract
 			$imageObj->constrainOnly(TRUE);
 			$imageObj->keepAspectRatio(TRUE);
 			$imageObj->keepFrame(FALSE);
-			$imageObj->resize(200,200 );
+			$imageObj->resize($width, $height);
 			$imageObj->save($imageResized);
 		 endif;
 

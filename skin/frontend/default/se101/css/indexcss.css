@@ -1,11 +1,4 @@
 /* CSS Document */
-body{background:url(../imsges/flames-repeat.jpg) repeat-x #000;font-family:'微软雅黑','宋体'; font-size:14px;}
-*{
-	margin:0;
-	padding:0;
-	border:0; 
-	list-style:none;
-}
 .col-main{margin:0px;}
 .main{padding:0px;}
 .clearfix:after {clear: both;content: " ";display: block;height:0;}
@@ -42,10 +35,13 @@ body{background:url(../imsges/flames-repeat.jpg) repeat-x #000;font-family:'微�
 }
 .content .list li{
 	margin:20px 15px 0 0;
-	width:226px;
+	width:310px;
 	background:#F1F1F1;
 	border-bottom:2px solid #AF2121;
 	float:left;
+}
+.content .list2 li{
+	width:226px;
 }
 .content .list2 li{
 	border:1px solid #FFF;

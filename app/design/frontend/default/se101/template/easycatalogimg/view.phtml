@@ -87,5 +87,7 @@
     <?php endif; ?>
     <h2><?php echo $_helper->categoryAttribute($_category, $this->htmlEscape($_category->getName()), 'name') ?></h2>
     </div>
-    
+    <?php if (Mage::getStoreConfig('easy_catalogimg/general/plisting') || ($countCategories == 0)) : ?>
+        <?php echo $this->getProductListHtml() ?>
+    <?php endif;?>
 <?php endif; ?>

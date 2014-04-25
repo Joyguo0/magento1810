@@ -40,7 +40,6 @@
 ?>
 <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
 <?php if($this->isContentMode()): ?>
-
     <div class="category-head">
     <?php if($this->IsRssCatalogEnable() && $this->IsTopCategory()): ?>
         <a href="<?php echo $this->getRssLink() ?>" class="link-feed right"><?php echo $this->__('Subscribe to RSS Feed') ?></a>
@@ -56,7 +55,6 @@
     <?php echo $this->getCmsBlockHtml() ?>
     
 <?php elseif($this->isMixedMode()): ?>
-
     <div class="category-head">
     <?php if($this->IsRssCatalogEnable() && $this->IsTopCategory()): ?>
         <a href="<?php echo $this->getRssLink() ?>" class="link-feed right"><?php echo $this->__('Subscribe to RSS Feed') ?></a>
@@ -83,25 +81,11 @@
     <?php endif;?>
     
 <?php else: ?>
-
     <div class="category-head">
     <?php if($this->IsRssCatalogEnable() && $this->IsTopCategory()): ?>
         <a href="<?php echo $this->getRssLink() ?>" class="link-feed right"><?php echo $this->__('Subscribe to RSS Feed') ?></a>
     <?php endif; ?>
     <h2><?php echo $_helper->categoryAttribute($_category, $this->htmlEscape($_category->getName()), 'name') ?></h2>
     </div>
-    <?php if($_imgHtml): ?>
-        <p><?php echo $_imgHtml?></p>
-    <?php endif; ?>
-    <?php if($_description=$_category->getDescription()): ?>
-        <p class="category-description"><?php echo $_helper->categoryAttribute($_category, $_description, 'description') ?></p>
-    <?php endif; ?>
-    <?php echo $this->getChildHtml('subcategories') ?>
-    <?php $categories = $this->getCurrentCategory()->getChildrenCategories();
-        $countCategories = is_array($categories) ? count($categories) : $categories->getSize();
-    ?>
-    <?php if (Mage::getStoreConfig('easy_catalogimg/general/plisting') || ($countCategories == 0)) : ?>            
-        <?php echo $this->getProductListHtml() ?>
-    <?php endif;?>
     
 <?php endif; ?>

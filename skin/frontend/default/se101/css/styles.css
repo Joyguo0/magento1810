@@ -74,7 +74,7 @@ ul,ol         { list-style:none; }
 .nobr         { white-space:nowrap !important; }
 .wrap         { white-space:normal !important; }
 .a-left       { text-align:left !important; }
-.a-center     { text-align:center !important; }
+.a-center     { text-align:center !important;width:40px; }
 .a-right      { text-align:right !important; }
 .v-top        { vertical-align:top; }
 .v-middle     { vertical-align:middle; }
@@ -492,7 +492,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 .multiple-checkout .data-table { .border-right:solid 1px #B2C2CB;}
 .data-table { width:100%; }
 .data-table th { padding:5px; border:1px solid #B6B6B6; font-weight:bold; white-space:nowrap; }
-.cart .data-table th{ border-bottom:2px solid #be0000;}
+/*.cart .data-table th{ border-bottom:2px solid #be0000;}*/
 .cart .data-table{background:url(../images/sprite_repeat.gif) repeat-x 0 -2920px #fff; }
 .data-table td { padding:10px; border:1px solid #B6B6B6; }
 .cart-table td { padding:15px; vertical-align:middle; }
@@ -1562,8 +1562,8 @@ tr.summary-details-excluded { font-style:italic; }
 /********** Common Checkout Styles > */
 
 /* One Page Checkout */
-.checkout-onepage-index .col-main{width:670px; padding:0;}
-.checkout-onepage-index .col-right{width:256px}
+.checkout-onepage-index .col-main{width:77%; padding:0;}
+.checkout-onepage-index .col-right{width:20.5%}
 .block-progress {}
 .block-progress dt { font-weight:bold; font-size:11px; color:#000; text-transform:uppercase; border-bottom:solid 1px #B6B6B6; padding:11px 0 11px 19px; }
 .block-progress dt a{ font-size:11px; font-weight:normal !important; }
@@ -2412,7 +2412,25 @@ legend {
 .footer table{margin:0 auto;}
 .footer table a{color:#FFF;}
 
-
+/* 添加的样式 */
+.cart-empty{
+	padding:50px 0 0 350px;
+	background:url(../images/car.png) no-repeat 160px 20px;
+	min-height:300px;
+	font-size:16px;
+	margin-top:20px;
+}
+.cart-empty p{margin:0;padding-top:10px;}
+.cart-empty p a{
+	display:block;
+	width:110px;
+	height:36px;
+	background:url(../images/20140513150819.jpg) no-repeat;
+	text-align:center;
+	line-height:36px;
+	color:#FFF;
+	margin-top:10px;
+}
 
 
 

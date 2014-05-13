@@ -15,6 +15,7 @@
 }
 .highslide img {
 	border: 1px solid #fefefe;
+	width:100%;
 }
 .highslide:hover img {
 	border-color: #ddd;
@@ -156,6 +157,7 @@ a.highslide-credits:hover i {
 	left: -50%;
 	border: 1px solid #ddd;
 	padding:3px;
+	width:85%;
 }
 
 .highslide-gallery ul a:hover img{border-color:#be0000;}

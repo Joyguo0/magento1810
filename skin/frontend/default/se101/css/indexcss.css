@@ -3,19 +3,28 @@
 .main{padding:0px;}
 .clearfix:after {clear: both;content: " ";display: block;height:0;}
 .banner{
-	width:1000px;
-	margin:12px auto;
+	max-width:1240px;
+	margin:6px auto;
 	background:#FFF;
 }
-.banner img{padding:5px;}
+.banner img{
+	padding:5px;
+	width:99.2%;
+}
 .content{
-	width:1000px;
+	max-width:1240px;
 	margin:0 auto 25px;
 	background:#FFF;
 }
 .content .list{
-	padding:20px 0 10px 20px;
+	padding: 0 10px 25px;
 	overflow:hidden;
+	width:98.4%;
+}
+.about .aboutL ul, .content .list ul {
+    overflow: hidden;
+    padding-left: 8px;
+    width: 99.3%;
 }
 .content .list2{padding-bottom:20px;}
 .content .list h2{

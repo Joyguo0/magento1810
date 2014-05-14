@@ -1192,7 +1192,11 @@ tr.summary-details-excluded { font-style:italic; }
 
 .product-view {  }
 
-.product-essential { padding:25px; background:#fff url(../images/product-details-bg.gif) 0 1px repeat-x; border:1px solid #ddd; }
+.product-essential { 
+	/*padding:25px; */
+	background:#F8F8F8;/* border:1px solid #ddd;*/ 
+	box-shadow: 0 0 10px 1px rgba(190, 189, 189, 0.74);
+}
 .product-essential h2 { font:bold 13px/1.35 '微软雅黑'; }
 
 .product-collateral {  padding:15px 0; }
@@ -1207,7 +1211,15 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* Product Images */
-.product-view .product-img-box { float:left; width:39%; }
+.product-view .product-img-box { 
+	float:left; 
+	width:39%;
+	background:#FFF;
+}
+.highslide-gallery{
+	padding-left:20px;
+}
+.product-img-box .highslide img{width:94%;margin:3%;}
 .col3-layout .product-view .product-img-box { float:none; margin:0 auto; }
 .product-view .product-img-box .product-image { margin:0 0 13px; }
 .product-view .product-img-box .product-image-zoom { position:relative; width:280px; height:280px; overflow:hidden; z-index:9; }

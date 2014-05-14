@@ -161,7 +161,7 @@ a.highslide-credits:hover i {
 }
 
 .highslide-gallery ul a:hover img{border-color:#be0000;}
-
+.product-img-box .more-views ul li:first-child .highslide img {border:1px solid #be0000;}
 html>/**/body .highslide-gallery ul li {
 	display: table;
 	text-align: center;

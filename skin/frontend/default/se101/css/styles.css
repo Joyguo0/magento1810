@@ -102,7 +102,7 @@ ul,ol         { list-style:none; }
 
 /* Base Columns */
 .col-left { float:left; width:166px;margin-left:10px;border: 1px solid #C7C6C4;}
-.sidebar{border:0;width:13.55%;}
+.sidebar{border:0;width:16.55%;}
 .col-main { float:left; width:628px; margin:0 10px; }
 .col-mainR{width:802px;}
 .col-right {
@@ -717,7 +717,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* Sidebar =============================================================================== */
 .block {background:#E0DFDC;margin-bottom:10px;}
 .block-hot-products{background:#FFF;}
-.block-hot-products2{width:166px;border: 1px solid #C7C6C4;}
+.block-hot-products2{width:99%;border: 1px solid #C7C6C4;}
 .block .block-title { padding:5px 9px; background:#333;border-bottom:1px solid #ddd; }
 .block .block-title strong { display:block; font:normal 1.3em/16px '微软雅黑'; min-height:16px; padding:1px 0 1px;  color: #FE0F0F;}
 .block .block-title strong span {}
@@ -2285,7 +2285,7 @@ legend {
 /* æ·»åŠ çš„ */
 .top-banner-right img{display:none;}
 .col-main-two{
-	width:84%;
+	width:81%;
 }
 .col-main-two .listing-catalogimg-grid{
 	width:770px;

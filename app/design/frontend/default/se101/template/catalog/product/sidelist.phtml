@@ -32,10 +32,9 @@
  */
 ?>
 <div class="block block-hot-products block-hot-products2">
-<img alt="" src="<?php echo Mage::getDesign()->getSkinUrl('images/Hot-Spot.jpg'); ?>">  
+<h2><?php echo  $this->__('Hot Product')?></h2>
 <div class="block-content">
 <?php $_productCollection=$this->getLoadedProductCollection() ?>
-
 
 <?php $_collectionSize = $_productCollection->count() ?>
     <?php $_columnCount = $this->getColumnCount(); ?>
@@ -52,7 +51,6 @@
 	      <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>"><?php echo $this->htmlEscape($_product->getName()) ?></a>
 	      </div>
               <p class="home-price"><?php echo $this->getPriceHtml($_product, true) ?></p>
-		<button onclick="window.location='<?php echo $_product->getProductUrl() ?>'" class="button btn-cart" title="<?php echo $this->__('Add to Cart') ?>" type="button"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
 		
             </div>
 	    <div class="clearer"></div>

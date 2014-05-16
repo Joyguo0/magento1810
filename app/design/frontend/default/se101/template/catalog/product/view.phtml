@@ -83,9 +83,7 @@
             <div class="product-name">
                 <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
             </div>
-            <div class="payment_option"><span><?php echo $this->__('Payment Option:') ?></span>
-			<img src="<?php echo $this->getSkinUrl('images/payment-options.gif') ?>" />
-	     </div>
+          
             <?php echo $this->getChildHtml('alert_urls') ?>
 
 		<?php echo $this->getChildHtml('product_type_data') ?>
@@ -106,6 +104,9 @@
                 <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
 		<?php echo $this->getChildHtml('addto') ?>
             <?php endif;?>
+              <div class="payment_option"><span><?php echo $this->__('Payment Option:') ?></span>
+			<img src="<?php echo $this->getSkinUrl('images/payment-options.gif') ?>" />
+	     </div>
             <?php if ($_product->getShortDescription()):?>
                 <div class="short-description">
                     <h2><?php echo $this->__('Quick Overview') ?></h2>

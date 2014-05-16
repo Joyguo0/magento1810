@@ -75,7 +75,6 @@ class Luxe_Bestsellers_Block_List extends Mage_Catalog_Block_Product_List
                             ->addStoreFilter($storeId)
                             ->setOrder('ordered_qty', 'desc')
                             ->setPageSize($this->getProductsLimit());
-
             $checkedProducts = new Varien_Data_Collection();
             $curPage = 1;
             while (count($checkedProducts) < $this->getProductsLimit()) {

@@ -48,6 +48,8 @@
                     <?php echo $this->getChildHtml('content') ?>
                 </div>
                 <div class="col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>
+                
+            	<?php echo $this->getLayout()->createBlock('bestsellers/list')->setTemplate('catalog/product/listcategoryfooter.phtml')->setLimit(5)->toHtml();?>
             </div>
         </div>
 	<div class="footer_aboutus">

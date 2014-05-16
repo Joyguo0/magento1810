@@ -61,7 +61,9 @@ Default layout, loads most of the pages
           <reference name="left">
             <block type="catalog/navigation" name="catalog.leftnav" before="-" template="catalog/navigation/left.phtml"/>
             <!-- <block type="mostviewed/newlist"  name="homepage.newlist" tbefore="-"  template="catalog/product/newlist.phtml" /> -->
-            <block type="mostviewed/list" name="home.mostviewed.list"  template="catalog/product/sidelist.phtml" />
+            <block type="mostviewed/list" name="home.mostviewed.list"  template="catalog/product/sidelist.phtml" >
+            	<action method="setColumnCount"><columns>5</columns></action>
+            </block>
         </reference>
     </default>
 
@@ -100,6 +102,7 @@ Category default layout
                     <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
                 </block>
             </block>
+	        <block type="bestsellers/list" name="home.bestsellers.list" alias="home_bestsellers_list" template="catalog/product/listcategoryfooter.phtml"/>
         </reference>
       
     </catalog_category_default>

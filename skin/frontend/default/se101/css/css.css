@@ -284,6 +284,7 @@ ul#topnav .sub ul li a:hover{text-decoration:underline;}
     margin: 12px 15px 0 0;
 }
 .about .aboutL ul li.last,.content .list ul li.last{margin-right:0;}
+.about .aboutL ul li:last-child,.content .list li:last-child{margin-right:0;}
 .about .aboutL ul li:hover{
 	border:1px solid #D2D2D2;
 	box-shadow:0 0 2px #D2D2D2;

@@ -1,5 +1,5 @@
 <?php $_categories = $this->getStoreCategories();
-	$width=228;$height=222;
+	$width=200;$height=222;
 ?>
 <div class="list">
 	<h2>
@@ -13,7 +13,7 @@
         if (empty($imageUrl)){$imageUrl = Mage::getBaseUrl('media').'catalog/category/np_thumb2.gif'; }
     	?>
 		<li><a href="<?php echo $cur_category->getUrl() ?>"> <img
-				src="<?php echo Mage::helper('easycatalogimg/image')->resize($imageUrl, $width , $height) ?>" />
+				src="<?php echo Mage::helper('easycatalogimg/image')->resize($imageUrl, $width , $height) ?>" width='200px' height='222px' />
 		</a>
 			<div class="info">
 				<p><?php echo $this->htmlEscape($_category->getName()) ?></p>

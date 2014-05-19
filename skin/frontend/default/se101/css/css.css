@@ -1,6 +1,4 @@
 /* CSS Document */
-body{background:url(../imsges/flames-repeat.jpg) repeat-x #000;font-family:'微软雅黑','宋体';font-size:100%;margin:0;padding:0;min-width:1080px;}
-h1,h2,h3,h4,div,header,footer,ul,li,p,dl,dt,dd,ol,li,img,span,strong,input,button{margin: 0;padding: 0;list-style:none;border:0;}
 em{font-style:normal;}
 .clearfix:after {clear: both;content: " ";display: block;height:0;}
 img { max-width:100%;}
@@ -68,7 +66,7 @@ ul#topnav{
 	/*background:url(../imsges/c-bg.jpg) repeat-x;*/
 	line-height:45px
 }
-.input-live-search {
+/*.input-live-search {
 	border: medium none;
 	color: #838383;
 	margin: 0 0 0 10px;
@@ -80,7 +78,7 @@ ul#topnav{
 	padding: 4px 4px 4px 6px;
 	border-radius: 3px;
 	margin-top:10px;
-}
+}*/
 ul#topnav li{float:left;margin:0;padding:0;position:relative;}
 ul#topnav li a.home,ul#topnav li a{
 	padding:0 15px;

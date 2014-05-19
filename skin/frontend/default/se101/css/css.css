@@ -144,8 +144,7 @@ ul#topnav .sub ul li a:hover{text-decoration:underline;}
 	height:350px;
 }
 .banner img{
-	padding:5px;
-	max-width:99.2%;
+	padding:9px;
 }
 /* content */
 .content{
@@ -1115,11 +1114,11 @@ button, input, select, textarea {
 }
 
 
-#focus{width:1230px;height:340px;overflow:hidden;position:relative;}
-#focus ul{height:380px;position:absolute;}
-#focus ul li{float:left;width:1230px;height:340px;overflow:hidden;position:relative;background:#000;}
+#focus{width:1240px;height:350px;overflow:hidden;position:relative;}
+#focus ul{height:350px;position:absolute;}
+#focus ul li{float:left;width:1240px;height:350px;overflow:hidden;position:relative;}
 #focus ul li div{position:absolute;overflow:hidden;}
-#focus .btnBg{position:absolute;width:1230px;height:20px;left:0;bottom:0;background:#000;}
+#focus .btnBg{position:absolute;width:1240px;height:20px;left:0;bottom:0;}
 #focus .btn{position:absolute;width:780px;height:10px;padding:5px 10px;right:0;bottom:0;text-align:right;}
 #focus .btn span{display:inline-block;_display:inline;_zoom:1;width:25px;height:10px;_font-size:0;margin-left:5px;cursor:pointer;background:#fff;}
 #focus .btn span.on{background:#fff;}

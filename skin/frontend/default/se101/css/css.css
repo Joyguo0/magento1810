@@ -1,7 +1,6 @@
 /* CSS Document */
 em{font-style:normal;}
 .clearfix:after {clear: both;content: " ";display: block;height:0;}
-img { max-width:100%;}
 main:after,.main{background:none;}
 /* header */
 header{
@@ -194,11 +193,14 @@ ul#topnav .sub ul li a:hover{text-decoration:underline;}
 	border:1px solid #D2D2D2;
 	box-shadow:0 0 2px #D2D2D2;
 }
-.content .list li img{padding:14px 14px 8px;}
+.content .list li img{
+	padding:14px 14px 8px;
+	max-width:200px;
+	max-height:200px;
+}
 .content .list li .info{
 	padding:0 0 12px 14px;
 	line-height:28px;
-	font-size:0.875em;
 }
 .content .list li .info a{
 	color:#AF2121;
@@ -234,7 +236,6 @@ ul#topnav .sub ul li a:hover{text-decoration:underline;}
 }
 .followbox h4{
     color:#666;
-    font-size:0.75em;
     font-weight:normal;
     margin:0 0 4px;
     overflow:hidden;

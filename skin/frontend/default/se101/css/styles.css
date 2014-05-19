@@ -2250,7 +2250,7 @@ legend {
 }
 
 /* reco_wrap */
-.reco_wrap{background:#FFF;border:1px solid #D1D1D1;clear:both;color:#404040;font-family:SimSun,Arial;font-size:12px;margin:0 auto 10px;width:99.9%;}
+.reco_wrap{background:#FFF;border:1px solid #D1D1D1;clear:both;color:#404040;margin:0 auto 10px;width:98.1%;}
 .reco_wrap h2{height:34px;line-height:34px;border-bottom:1px solid #D1D1D1;background:#F7F7F7;}
 .reco_wrap h2 span{display:inline-block;font-size:14px;font-weight:bold;margin-left:20px;color:#404040;}
 .reco_wrap ul{background:#FFF;overflow:hidden;padding-left:15px;}

@@ -1,7 +1,6 @@
 /* CSS Document */
 em{font-style:normal;}
 .clearfix:after {clear: both;content: " ";display: block;height:0;}
-img { max-width:100%;}
 main:after,.main{background:none;}
 /* header */
 header{
@@ -146,7 +145,6 @@ ul#topnav .sub ul li a:hover{text-decoration:underline;}
 }
 .banner img{
 	padding:5px;
-	max-width:99.2%;
 }
 /* content */
 .content{
@@ -194,11 +192,14 @@ ul#topnav .sub ul li a:hover{text-decoration:underline;}
 	border:1px solid #D2D2D2;
 	box-shadow:0 0 2px #D2D2D2;
 }
-.content .list li img{padding:14px 14px 8px;}
+.content .list li img{
+	padding:14px 14px 8px;
+	max-width:200px;
+	max-height:200px;
+}
 .content .list li .info{
 	padding:0 0 12px 14px;
 	line-height:28px;
-	font-size:0.875em;
 }
 .content .list li .info a{
 	color:#AF2121;
@@ -234,7 +235,6 @@ ul#topnav .sub ul li a:hover{text-decoration:underline;}
 }
 .followbox h4{
     color:#666;
-    font-size:0.75em;
     font-weight:normal;
     margin:0 0 4px;
     overflow:hidden;
@@ -284,6 +284,7 @@ ul#topnav .sub ul li a:hover{text-decoration:underline;}
     margin: 12px 15px 0 0;
 }
 .about .aboutL ul li.last,.content .list ul li.last{margin-right:0;}
+.about .aboutL ul li:last-child,.content .list li:last-child{margin-right:0;}
 .about .aboutL ul li:hover{
 	border:1px solid #D2D2D2;
 	box-shadow:0 0 2px #D2D2D2;
@@ -1114,7 +1115,17 @@ button, input, select, textarea {
 }
 
 
-
+#focus{width:1240px;height:350px;overflow:hidden;position:relative;}
+#focus ul{height:350px;position:absolute;}
+#focus ul li{float:left;width:1240px;height:350px;overflow:hidden;position:relative;}
+#focus ul li div{position:absolute;overflow:hidden;}
+#focus .btnBg{position:absolute;width:1240px;height:20px;left:0;bottom:0;}
+#focus .btn{position:absolute;width:1220px;height:10px;padding:5px 10px;right:6px;bottom:15px;text-align:right;}
+#focus .btn span{display:inline-block;_display:inline;_zoom:1;width:25px;height:10px;_font-size:0;margin-left:5px;cursor:pointer;background:#fff;}
+#focus .btn span.on{background:#fff;}
+#focus .preNext{width:45px;height:100px;position:absolute;top:90px;background:url(img/sprite.png) no-repeat 0 0;cursor:pointer;}
+#focus .pre{left:0;}
+#focus .next{right:0;background-position:right top;}
 
 
 

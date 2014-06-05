@@ -1,0 +1,33 @@
+<?php
+/**
+ * Magento responsive theme
+ *
+ * @category    design
+ * @package     bootstrapped_default
+ * @copyright   Copyright (c) 2012 Magenthon (http://magenthon.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @author      Vedran Subotic <vedran@magenthon.com>
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<div class="row">
+ <?php echo $this->getChildHtml('topLinks') ?>
+</div>
+
+<h1><a href="index.html"><img src="<?php echo $this->getSkinUrl('images/top.jpg')?>" alt=""></a></h1>
+
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+</a>
+<div class="nav-collapse">
+        <?php echo  $this->getChildHtml('topMenu') ?>
+       
+                
+    <?php echo $this->getChildHtml('topSearch') ?>
+</div><!--/.nav-collapse -->
+
+<?php //echo $this->getChildHtml('topContainer'); ?>

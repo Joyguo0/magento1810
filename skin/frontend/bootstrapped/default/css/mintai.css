@@ -4,6 +4,7 @@ margin: 0 auto;
 }
 .row {
 width: 100%;
+margin:0;
 }
 .links li a {
 color: #EBBC58;
@@ -15,4 +16,9 @@ padding: 0 8px;
 }
 ul, ol, li {
 list-style: none;
+}
+.nav-collapse{
+	width:100%;
+	overflow:hidden;
+	background:#A82020;
 }

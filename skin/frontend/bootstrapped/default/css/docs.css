@@ -8,14 +8,14 @@
 
 /* Body and structure
 -------------------------------------------------- */
-body {
+/*body {
   position: relative;
   padding-top: 90px;
   background-color: #fff;
   background-image: url(../img/grid-18px-masked.png);
   background-repeat: repeat-x;
   background-position: 0 40px;
-}
+}*/
 
 
 /* Tweak navbar brand link to be super sleek
@@ -117,7 +117,7 @@ hr.soften {
 
 /* Subnav */
 .subnav {
-  width: 100%;
+  width:99.9%;
   height: 36px;
   background-color: #eeeeee; /* Old browsers */
   background-repeat: repeat-x; /* Repeat the gradient */

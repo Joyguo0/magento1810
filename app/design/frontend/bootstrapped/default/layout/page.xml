@@ -44,7 +44,7 @@ Default layout, loads most of the pages
 				<action method="addCss"><stylesheet>js/google-code-prettify/prettify.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/diff.css</stylesheet></action>
 				<action method="addCss"><stylesheet>css/mintai.css</stylesheet></action>
-				<action method="addItem"><type>skin_js</type><name>js/mintai.js</name></action>
+				
             </block>
 
             <block type="core/text_list" name="after_body_start" as="after_body_start" translate="label">

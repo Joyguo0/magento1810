@@ -152,7 +152,7 @@ body{
 }
 .label{
     line-height: 12px;
-    padding: 2px 4px 3px;
+    padding: 2px 8px 3px;
     vertical-align: inherit;
 }
 li .active > a{

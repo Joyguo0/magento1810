@@ -200,6 +200,7 @@ header .links li a{
 	margin:0 auto;
 	padding:10px;
 	border-radius:2px;
+	background:#FFF;
 }
 .content{padding:10px 0 20px;}
 .crumb{margin-bottom:10px;padding:0 10px;}
@@ -393,6 +394,8 @@ header .links li a{
 .detail .col-md-4{
 	padding:0;
 	background:#FFF;
+	width:33.3%;
+	float:left;
 }
 .detail{padding:10px 0;}
 .product-img-box{
@@ -404,7 +407,7 @@ header .links li a{
 	padding-bottom:25px;
 }
 .product-img-box p{
-	width:100%;
+	width:97.8%;
 	line-height:32px;
 	background:#000;
 	opacity:0.6;
@@ -426,8 +429,12 @@ header .links li a{
 }
 .content .col-xs-6 strong .price-box{
 	border-bottom:0;
+	font-size:14px;
+	color:#333;
+	font-weight:normal;
 }
-.detail .col-md-8{padding:0;}
+.content .col-xs-6 strong .price-box span{font-size:24px}
+.detail .col-md-8{padding:0;width: 66.6667%;float:left;}
 
 .detail .price-box label {
     color: #666666;
@@ -488,7 +495,6 @@ input.input-text, textarea {
 #tabs .ui-tabs-nav {
     border: 1px solid #DFDFDF;
     height: 38px;
-    width: 100%;
 	overflow:hidden;
 }
 #tabs .ui-state-default{

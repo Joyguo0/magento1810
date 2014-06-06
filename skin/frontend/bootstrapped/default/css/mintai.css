@@ -123,7 +123,15 @@ list-style: none;
     padding-right: 28px;
     text-decoration: none;
 }
+.well{
+	margin:0;
+	padding:12px;
+}
+.well h1{
+	font-size:18px;
+}
 
+.ui-tabs-panel{padding-top:10px;}
 
 
 

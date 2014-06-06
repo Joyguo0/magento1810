@@ -106,31 +106,52 @@ var optionsPrice = new Product.OptionsPrice( <?php echo $this -> getJsonConfig()
         }.bind(productAddToCartForm);
          //]]>
         </script>
-
-
-        <div class="product-collateral">
+    </div>
+</div>
+<div class="product-collateral">
         <div class="product-collateral-left ui-tabs ui-widget ui-widget-content ui-corner-all" id="tabs">
               <ul role="tablist" id="bg" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
-                <li id="font1" aria-selected="false" aria-labelledby="ui-id-1" aria-controls="tabs-1" tabindex="-1" role="tab" class="ui-state-default ui-corner-top ui-state-active"> <a href="#tabs-1">
+                <li id="one1" onclick="setTab('one',1)" aria-selected="false" aria-labelledby="ui-id-1" aria-controls="tabs-1" tabindex="-1" role="tab" class="ui-state-default ui-corner-top ui-state-active"> <a href="#tabs-1">
                         <?php echo $this->__('description');?></a></li>
-                <li id="font2" aria-selected="false" aria-labelledby="ui-id-2" aria-controls="tabs-2" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"> <a href="#tabs-2">
+                <li id="one2" onclick="setTab('one',2)" aria-selected="false" aria-labelledby="ui-id-2" aria-controls="tabs-2" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"> <a href="#tabs-2">
                         <?php echo $this->__('review');?></a></li>
-                <li id="font3" aria-selected="true" aria-labelledby="ui-id-3" aria-controls="tabs-3" tabindex="0" role="tab" class="ui-state-default ui-corner-top ui-tabs-active"><a href="#tabs-3">
+                <li id="one3" onclick="setTab('one',3)" aria-selected="true" aria-labelledby="ui-id-3" aria-controls="tabs-3" tabindex="0" role="tab" class="ui-state-default ui-corner-top ui-tabs-active"><a href="#tabs-3">
                         <?php echo $this->__('month order review');?></a></li>
               </ul>
-              <div style="display:block" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-box" id="tabs-1"> 
+              <div style="display:block" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-box" id="con_one_1"> 
               	 <?php echo $_product->getDescription();?>
                 <?php echo $this->getChildHtml('product.info.product_additional_data') ?>
               </div>
-                <div aria-hidden="true" aria-expanded="false" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-box" aria-labelledby="ui-id-2" id="tabs-2">
-                   <?php echo $this->getChildHtml('product_review') ?>
+                <div aria-hidden="true" aria-expanded="false" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-box" aria-labelledby="ui-id-2" id="con_one_2">
+               <?php echo $this->getChildHtml('product_review') ?>
                 </div>
-                <div aria-hidden="false" aria-expanded="true" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-box" aria-labelledby="ui-id-3" id="tabs-3">
+                <div aria-hidden="false" aria-expanded="true" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-box" aria-labelledby="ui-id-3" id="con_one_3">
                     <?php echo $this->getLayout()->createBlock('magemenu/orders')->assign('productname', $_product->getName())->setTemplate('catalog/product/view/orders.phtml')->toHtml(); ?>
                 </div>
-            </div>
-        
-         
+            </div>         
         </div>
-    </div>
-</div>
+	<script type="text/javascript">
+	   function setTab(name,cursel){
+		cursel_0=cursel;
+		var links = document.getElementById("tabs").getElementsByTagName('li')
+		links_len=links.length;
+		for(var i=1; i<=links_len; i++){
+			var menu = document.getElementById(name+i);
+			var id_value = "con_"+name+"_"+i;
+			var menudiv = document.getElementById("con_"+name+"_"+i);
+			if(i==cursel){
+				menu.className="ui-state-default ui-corner-top ui-state-active";
+				menudiv.style.display="block";
+			}
+			else{
+				menu.className="ui-state-default ui-corner-top";
+				menudiv.style.display="none";
+			}
+		}
+	  }
+	  function Next(){                                                        
+		cursel_0++;
+		if (cursel_0>links_len)cursel_0=1
+		setTab(name_0,cursel_0);
+	} 
+	</script>

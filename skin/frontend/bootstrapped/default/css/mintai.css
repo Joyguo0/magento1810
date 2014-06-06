@@ -40,6 +40,7 @@ list-style: none;
     max-width: 1240px;
 	background:#FFF;
 	padding:0 10px;
+	border-radius:4px
 }
 .about h2{
 	font-size:1.125em;

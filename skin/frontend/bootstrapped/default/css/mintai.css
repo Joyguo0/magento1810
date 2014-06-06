@@ -18,11 +18,9 @@ ul, ol, li {
 list-style: none;
 }
 .nav-collapse{
-	width:100%;
 	overflow:hidden;
 	background:#A82020;
-	border-radius:4px;
-	margin-top:6px;
+    border-radius: 4px;
 }
 .container .banner{
 	background:#FFF;
@@ -33,7 +31,7 @@ list-style: none;
     float: right;
     padding: 8px 0;
 }
-.navbar-search .search-query{margin:10px 15px 10px 0;}
+.navbar-search .search-query{margin:8px 15px 8px 0;}
 .mt6{margin-top:6px;}
 .about{
     margin: 0 auto;
@@ -70,9 +68,18 @@ list-style: none;
 .container .list li img {
     padding: 14px 14px 8px;
 }
-
-
-
+.navbg{
+	padding-left:10px;
+	color:#FFF;
+	float:left;
+}
+.navbg a:link,.navbg a:visited{
+	color:#FFF;
+	font-size:16px;
+}
+.navbg a:hover{
+	text-decoration:none;
+}
 
 
 

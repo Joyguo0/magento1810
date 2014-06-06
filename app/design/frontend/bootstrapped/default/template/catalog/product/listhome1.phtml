@@ -2,20 +2,21 @@
     $_productCollection=$this->getLoadedProductCollection();
     $_helper = $this->helper('catalog/output');
 ?>
-<div class="list list2">
-	<h2>
-		<?php echo $this->getTitle() ?>
-	</h2>
-	<ul>
-		<?php $i=0; foreach ($_productCollection as $_product): ?>
-		<li><a href="<?php echo $_product->getProductUrl() ?>"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(200); ?>" /></a>
-			<div class="bottom">
-				<b title="分享数"> <?php echo rand(0,1000)?> 人喜欢 </b> <span class="J_card fr"> <?php echo Mage::helper('core')->currency($_product->getPrice(), true, false);?> </span>
-			</div>
-			<div class="follow followbox">
-				<h4><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h4>
-			</div>
-		</li>
-		<?php endforeach ?>
-	</ul>
+
+<h2>
+    <span>
+        <a href="#">
+             <img alt="" src="<?php echo $this->getSkinUrl('images/more.png'); ?>">
+        </a>
+    </span>
+    <?php echo $this->getTitle() ?>
+</h2>
+<?php $i=0; foreach ($_productCollection as $_product): ?>
+
+<div class="col-xs-6 col-sm-3">
+    <a class="IMG" href="<?php echo $_product->getProductUrl() ?>"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(200); ?>" alt=""></a>
+    <a class="wenzi" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>">
+        <?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a>
 </div>
+
+<?php endforeach ?>

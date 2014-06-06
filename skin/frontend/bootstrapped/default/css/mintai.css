@@ -18,11 +18,7 @@ ul, ol, li {
 list-style: none;
 }
 .nav-collapse{
-	width:100%;
 	overflow:hidden;
-	background:#A82020;
-	border-radius:4px;
-	margin-top:6px;
 }
 .container .banner{
 	background:#FFF;
@@ -33,7 +29,7 @@ list-style: none;
     float: right;
     padding: 8px 0;
 }
-.navbar-search .search-query{margin:10px 15px 10px 0;}
+.navbar-search .search-query{margin:8px 15px 8px 0;}
 .mt6{margin-top:6px;}
 .about{
     margin: 0 auto;
@@ -70,15 +66,72 @@ list-style: none;
 .container .list li img {
     padding: 14px 14px 8px;
 }
+.navbg{
+	padding-left:10px;
+	color:#FFF;
+	float:left;
+}
+.navbg a:link,.navbg a:visited{
+	color:#FFF;
+	font-size:16px;
+}
+.navbg a:hover{
+	text-decoration:none;
+}
+/*.navbar .nav > li > a{
+	padding-right:20px;
+	background:url(../images/sav.png) no-repeat right center;
+}
+.navbar .nav > li > ul.level0{
+	position:absolute;
+	left:0;
+	top:100%;
+	display:none;
+	z-index:1000;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+	background:#FFF;
+}
+.navbar .nav > li > ul.level0 >li a{
+	padding:3px 30px;
+}
+*/
+.content .col-sm-3{width:19.02%;float:left;}
+.content .mainA .col-sm-3{width:16.6%;}
+.toolbar-bottom{
+	float:left;
+	width:99.91%;
+	text-align:center;
+	margin-top:20px;
+}
+.toolbar-bottom .pagination ul.nav{float:none;}
+.col-xs-6 .info{
+	font-size: 1.1em;
+    line-height: 28px;
+    padding: 0 0 12px 14px;
+}
+.col-xs-6 .info p{
+	margin:0;
+	height:20px;
+	line-height:20px;
+	overflow:hidden;
+}
+.col-xs-6 .info a {
+    background:url(../images/icon.png) no-repeat right center;
+    color: #AF2121;
+    display: inline-block;
+    font-size: 1em;
+    padding-right: 28px;
+    text-decoration: none;
+}
+.well{
+	margin:0;
+	padding:12px;
+}
+.well h1{
+	font-size:18px;
+}
 
-
-
-
-
-
-
-
-
+.ui-tabs-panel{padding-top:10px;}
 
 
 

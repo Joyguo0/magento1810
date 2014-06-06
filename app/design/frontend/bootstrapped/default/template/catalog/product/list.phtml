@@ -26,8 +26,8 @@
   <?php echo $this->__('There are no products matching the selection.') ?>
 </div>
 <?php else: ?>
-<?php echo $this->getToolbarHtml() ?>
 <div class="mainA clearfix">
+    <?php echo $this->getToolbarHtml() ?>
     <?php // List mode ?>
     <?php if($this->getMode()!='grid'): ?>
     <?php $_iterator = 0; ?>
@@ -82,7 +82,7 @@
     <?php $_collectionSize = $_productCollection->count() ?>
     <?php $_columnCount = 5; ?>
     <?php $i=0; foreach ($_productCollection as $_product): ?>
-             <div class="col-xs-6 col-sm-3">
+             <div class="col-xs-4 col-sm-2">
                   <a class="IMG" href="<?php echo $_product->getProductUrl() ?>"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(225); ?>" alt=""></a>
                <a class="wenzi" href="<?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>" title="<?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a>
                <strong> <?php echo $this->getPriceHtml($_product, true) ?></strong>

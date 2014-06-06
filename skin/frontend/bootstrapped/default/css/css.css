@@ -359,7 +359,7 @@ header .links li a{
     color: #CC0000;
     font-weight: bold;
 }
-.content .col-xs-6,.content .col-sm-3{
+.content .col-xs-4,.content .col-sm-2{
 	padding:0;
 	margin:20px 0 0 10px;
 	background:#F1F1F1;

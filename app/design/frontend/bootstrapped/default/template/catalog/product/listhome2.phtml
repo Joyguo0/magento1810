@@ -10,7 +10,7 @@
 </h2>
 <?php $i=0; foreach ($_productCollection as $_product): ?>
 <div class="col-xs-6 col-sm-3">
-    <a class="IMG" href="#"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(200); ?>" alt=""></a>
+    <a class="IMG" href="<?php echo $_product->getProductUrl() ?>"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(200); ?>" alt=""></a>
     <div class="bottom">
         <b title="分享数">
               <?php echo rand(0,1000)?>人喜欢

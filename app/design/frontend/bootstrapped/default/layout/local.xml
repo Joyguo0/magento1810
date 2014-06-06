@@ -42,19 +42,8 @@ Default layout, loads most of the pages
         <remove name="catalog.leftnav.custom" />
     </customer_account>
 
-    <catalog_category_default translate="label">
-        <remove name="catalog.leftnav" />
-        <reference name="breadcrumbs">
-            <block type="catalog/layer_view" name="catalog.leftnav.breadcrumbs" after="currency" template="catalog/layer/view.phtml"/>
-        </reference>
-    </catalog_category_default>
+
     
-    <catalog_category_layered translate="label">
-        <remove name="catalog.leftnav" />
-        <reference name="breadcrumbs">
-            <block type="catalog/layer_view" name="catalog.leftnav.breadcrumbs" after="currency" template="catalog/layer/view.phtml"/>
-        </reference>
-    </catalog_category_layered>
 
     <tag_list_index translate="label">
         <label>Tags List (All Available)</label>

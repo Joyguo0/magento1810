@@ -27,10 +27,8 @@
                     </div>
                 </div>
 
-                <div class="container">
-                    <header>
-                        <?php echo $this->getChildHtml('breadcrumbs') ?>
-                    </header>
+                <div class="container row content">
+                        <?php //echo $this->getChildHtml('breadcrumbs') ?>
                                 <?php echo $this->getChildHtml('global_messages') ?>
                                 <?php echo $this->getChildHtml('content') ?>
                 </div>
@@ -47,22 +45,7 @@
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
 
-        <script src="<?php echo $this->getSkinUrl('js/jquery.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/google-code-prettify/prettify.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/bootstrap-transition.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/bootstrap-alert.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/bootstrap-modal.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/bootstrap-dropdown.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/bootstrap-scrollspy.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/bootstrap-tab.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/bootstrap-tooltip.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/bootstrap-popover.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/bootstrap-button.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/bootstrap-collapse.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/bootstrap-carousel.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/bootstrap-typeahead.js'); ?>"></script>
-        <script src="<?php echo $this->getSkinUrl('js/application.js'); ?>"></script>
-         <script src="<?php echo $this->getSkinUrl('js/mintai.js'); ?>"></script>
+
 
         <?php echo $this->getChildHtml('before_body_end') ?>
 

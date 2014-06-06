@@ -33,7 +33,46 @@
 ?>
 <?php $_menu = $this->getHtml('level-top') ?>
 <?php if($_menu): ?>
-    <ul id="nav" class='nav'> 
-        <?php echo $_menu ?>
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">消防系列<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="list.html">水枪接口</a></li>
+          <li><a href="#">洒水喷头</a></li>
+          <li><a href="#">室外消火栓</a></li>
+          <li><a href="#">室内消火栓</a></li>
+          <li><a href="#">水泵接合器</a></li>
+          <li><a href="#">报警阀</a></li>
+          <li><a href="#">水流指示器</a></li>
+          <li><a href="#">消火栓箱</a></li>
+          <li><a href="#">灭火器</a></li>
+          <li><a href="#">防火卷帘门</a></li>
+          <li><a href="#">配件系列</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">水带产品系列<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">消防水带</a></li>
+          <li><a href="#">软管卷盘</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">阀门产品系列<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">信号杆/闸阀</a></li>
+          <li><a href="#">蝶阀</a></li>
+          <li><a href="#">配件系列</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">泡沫系列<b class="caret"></b></a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">灭火器系列<b class="caret"></b></a>
+      </li>
+      <!--<li><a href="#">关于我们</a></li>
+      <li><a href="#">联系我们</a></li>-->
     </ul>
+
 <?php endif ?>

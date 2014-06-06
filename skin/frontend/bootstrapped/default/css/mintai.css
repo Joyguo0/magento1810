@@ -19,8 +19,6 @@ list-style: none;
 }
 .nav-collapse{
 	overflow:hidden;
-	background:#A82020;
-    border-radius: 4px;
 }
 .container .banner{
 	background:#FFF;
@@ -80,11 +78,51 @@ list-style: none;
 .navbg a:hover{
 	text-decoration:none;
 }
-
-
-
-
-
+/*.navbar .nav > li > a{
+	padding-right:20px;
+	background:url(../images/sav.png) no-repeat right center;
+}
+.navbar .nav > li > ul.level0{
+	position:absolute;
+	left:0;
+	top:100%;
+	display:none;
+	z-index:1000;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+	background:#FFF;
+}
+.navbar .nav > li > ul.level0 >li a{
+	padding:3px 30px;
+}
+*/
+.content .col-sm-3{width:19.02%;float:left;}
+.content .mainA .col-sm-3{width:16.6%;}
+.toolbar-bottom{
+	float:left;
+	width:99.91%;
+	text-align:center;
+	margin-top:20px;
+}
+.toolbar-bottom .pagination ul.nav{float:none;}
+.col-xs-6 .info{
+	font-size: 1.1em;
+    line-height: 28px;
+    padding: 0 0 12px 14px;
+}
+.col-xs-6 .info p{
+	margin:0;
+	height:20px;
+	line-height:20px;
+	overflow:hidden;
+}
+.col-xs-6 .info a {
+    background:url(../images/icon.png) no-repeat right center;
+    color: #AF2121;
+    display: inline-block;
+    font-size: 1em;
+    padding-right: 28px;
+    text-decoration: none;
+}
 
 
 

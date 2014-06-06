@@ -76,8 +76,7 @@
 	text-shadow: 0 0 0.2em #CCFFCC, 0 0 0.2em #CCFFCC, 0 0 0.2em #CCFFCC;
 }
 body{
-	background-image: url('http://bootstrapped.magenthon.com/pixel.png') !important;
-    padding-top: 45px;
+	background:url(../images/flames-repeat.jpg) repeat-x center top #000;
 }
 @media (min-width: 768px) and (max-width: 980px) {
     /* Remove any padding from the body */

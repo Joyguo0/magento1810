@@ -2985,6 +2985,7 @@ input[type="submit"].btn.btn-mini {
   display: block;
   float: left;
   position:relative;
+  background:#A82020;
 }
 .navbar .nav > li > a {
   float: none;

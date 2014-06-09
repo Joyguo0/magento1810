@@ -1,0 +1,62 @@
+<?php
+/**
+ * Magento responsive theme
+ *
+ * @category    design
+ * @package     bootstrapped_default
+ * @copyright   Copyright (c) 2012 Magenthon (http://magenthon.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @author      Vedran Subotic <vedran@magenthon.com>
+ */
+?>
+<div class="row-fluid">
+		    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_links')->toHtml();?>
+</div>
+<script src="<?php echo $this->getSkinUrl('js/jquery.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/google-code-prettify/prettify.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/bootstrap-transition.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/bootstrap-alert.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/bootstrap-modal.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/bootstrap-dropdown.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/bootstrap-scrollspy.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/bootstrap-tab.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/bootstrap-tooltip.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/bootstrap-popover.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/bootstrap-button.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/bootstrap-collapse.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/bootstrap-carousel.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/bootstrap-typeahead.js'); ?>"></script>
+<script src="<?php echo $this->getSkinUrl('js/application.js'); ?>"></script>
+ <script src="<?php echo $this->getSkinUrl('js/mintai.js'); ?>"></script>
+<!-- Start Open Web Analytics Tracker 
+<script type="text/javascript">// <![CDATA[
+var owa_cmds = owa_cmds || [];
+<?php if($_SERVER['SERVER_ADDR']=='115.29.237.104'){?>
+	var owa_baseUrl = 'http://115.29.237.104/owa/';
+	owa_cmds.push(['setSiteId', 'a2eda01e19e2dd612f28e4562a2e648d']);
+<?php }else{ ?>
+	var owa_baseUrl = 'http://localhost/owa/';
+	owa_cmds.push(['setSiteId', '47e59dec1e6340911328f70d3ec3e0bd']);
+<?php }?>
+owa_cmds.push(['trackPageView']);
+owa_cmds.push(['trackClicks']);
+owa_cmds.push(['trackDomStream']);
+
+(function() {
+	var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+	owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+	_owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+	var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+}());
+// ]]></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50649353-1', 'mintaicorp.com');
+  ga('send', 'pageview');
+
+</script>-->

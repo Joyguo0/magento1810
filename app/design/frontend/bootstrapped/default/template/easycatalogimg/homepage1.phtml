@@ -1,0 +1,18 @@
+<?php $_categories=$this->getStoreCategories(); $width=200;$height=222; ?>
+
+<h2>
+    <?php echo $this->getTitle() ?>
+</h2>
+
+    <?php foreach ($_categories as $_category){ if (!$_category->getIsActive()){continue; } $cur_category = Mage::getModel('catalog/category')->load($_category->getId()); $imageUrl = $cur_category->getImageUrl(); if (empty($imageUrl)){$imageUrl = Mage::getBaseUrl('media').'catalog/category/np_thumb2.gif'; } ?>
+    <div class="col-xs-6 col-sm-3">
+        <a class="IMG" href="<?php echo $cur_category->getUrl() ?>"><img src="<?php echo Mage::helper('easycatalogimg/image')->resize($imageUrl, $width , $height) ?>" width='200px' height='222px'  /></a>
+        <div class="info">
+            <p>
+                <?php echo $this->htmlEscape($_category->getName()) ?></p>
+            <a class="more" href="<?php echo $cur_category->getUrl() ?>">查看该系列</a>
+        </div>
+    </div>
+
+    <?php }?>
+

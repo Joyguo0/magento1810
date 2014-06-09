@@ -582,10 +582,10 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-form {
+/*form {
   margin: 0 0 18px;
 }
-fieldset {
+*/fieldset {
   padding: 0;
   margin: 0;
   border: 0;
@@ -4065,8 +4065,8 @@ a.thumbnail:hover {
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  /*padding-right: 15px;
+  padding-left: 15px;*/
 }
 
 .col-xs-1,
@@ -4495,7 +4495,8 @@ a.thumbnail:hover {
     width: 50%;
   }
   .col-md-5 {
-    width: 41.66666666666667%;
+    width:66.7%;
+	padding:0;
   }
   .col-md-4 {
     width: 33.33333333333333%;

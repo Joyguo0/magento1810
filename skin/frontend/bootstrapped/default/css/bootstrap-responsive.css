@@ -72,7 +72,7 @@
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width:1240px) {
   .visible-tablet {
     display: block;
   }
@@ -135,10 +135,10 @@
   }
 }
 @media (max-width: 767px) {
-  body {
+ /* body {
     padding-left: 20px;
     padding-right: 20px;
-  }
+  }*/
   .navbar-fixed-top {
     margin-left: -20px;
     margin-right: -20px;
@@ -382,9 +382,9 @@
     position: static;
     margin-bottom: 18px;
   }
-  .navbar-fixed-top .navbar-inner {
+  /*.navbar-fixed-top .navbar-inner {
     padding: 5px;
-  }
+  }*/
   .navbar .container {
     width: auto;
     padding: 0;
@@ -395,7 +395,7 @@
     margin: 0 0 0 -5px;
   }
   .navbar .nav-collapse {
-  	 background: none repeat scroll 0 0 #A82020;
+  	background: none repeat scroll 0 0 #A82020;
   	position: relative;
     z-index: 10000;
     clear: left;

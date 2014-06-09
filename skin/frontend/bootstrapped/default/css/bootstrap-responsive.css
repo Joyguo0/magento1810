@@ -89,6 +89,7 @@
 @media (max-width: 480px) {
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
+  	 background: none repeat scroll 0 0 #A82020;
   }
   .page-header h1 small {
     display: block;
@@ -394,6 +395,9 @@
     margin: 0 0 0 -5px;
   }
   .navbar .nav-collapse {
+  	 background: none repeat scroll 0 0 #A82020;
+  	position: relative;
+    z-index: 10000;
     clear: left;
   }
   .navbar .nav {
@@ -414,21 +418,21 @@
     text-shadow: none;
   }
   .navbar .nav > li > a,
-  .navbar .dropdown-menu a {
+  .navbar .level-top a {
     padding: 6px 15px;
     color:#FFF;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
   }
-  .navbar .dropdown-menu li + li a {
+  .navbar .level-top li + li a {
     margin-bottom: 2px;
   }
   .navbar .nav > li > a:hover,
-  .navbar .dropdown-menu a:hover {
+  .navbar .level-top a:hover {
     background-color: #222222;
   }
-  .navbar .dropdown-menu {
+  .navbar .level-top {
     position: static;
     top: auto;
     left: auto;
@@ -446,11 +450,11 @@
     -moz-box-shadow: none;
     box-shadow: none;
   }
-  .navbar .dropdown-menu:before,
-  .navbar .dropdown-menu:after {
+  .navbar .level-top:before,
+  .navbar .level-top:after {
     display: none;
   }
-  .navbar .dropdown-menu .divider {
+  .navbar .level-top .divider {
     display: none;
   }
   .navbar-form,

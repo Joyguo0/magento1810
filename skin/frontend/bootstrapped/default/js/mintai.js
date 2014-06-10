@@ -4,6 +4,7 @@ jQuery(function($) {
         $(this).mouseover(
             function() {
                 $(this).find('ul').show();
+                $('.nav-collapse').css('height','auto');
             });
         $(this).mouseout(
             function() {
@@ -11,4 +12,7 @@ jQuery(function($) {
             });
 
     });
+	$('.navbg a').click(function(){
+	   $('.nav-collapse').css('height','auto');
+	});
 });

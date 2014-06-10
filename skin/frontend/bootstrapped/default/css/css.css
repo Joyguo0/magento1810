@@ -317,7 +317,7 @@ header .links li a{
     background-position: 0 -42px;
 }
 .content .col-sm-4{
-	width:33.3%;
+	/*width:33.3%;*/
 	padding:0;
 	text-align:center;
 	margin-top:15px;

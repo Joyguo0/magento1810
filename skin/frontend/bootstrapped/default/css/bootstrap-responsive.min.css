@@ -644,3 +644,6 @@ input.span1, textarea.span1, .uneditable-input.span1 {
 	margin-left: 30px;
 }
 }
+@media (max-width:200px) {
+.container .banner {height:200px;}
+}

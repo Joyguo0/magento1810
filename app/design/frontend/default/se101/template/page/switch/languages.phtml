@@ -36,7 +36,7 @@
     <div class="language-switcherA">
     <?php foreach ($this->getStores() as $k=>$_lang): ?>
         <?php $_selected = ($_lang->getId() == $this->getCurrentStoreId()) ? 'selected"selected"' : '' ?>
-        <a class="<?php echo $_selected ?>"  href="<?php echo $_lang->getCurrentUrl() ?>"><?php echo $this->htmlEscape($_lang->getName()) ?></a>　<?php if(($k+1)!=count($this->getStores())){echo '|';}?> &nbsp;&nbsp;    
+        <a class="<?php echo $_selected ?>"  href="<?php echo $_lang->getCurrentUrl() ?>"><?php echo $this->htmlEscape($_lang->getName()) ?></a>　<?php if(($k+2)!=count($this->getStores())){echo '|';}?> &nbsp;&nbsp;    
     <?php endforeach; ?>
     </div>
 </div>

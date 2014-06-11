@@ -12,8 +12,9 @@ font-size: 12px;
 }
 .links li {
 float: left;
-padding: 0 8px;
+padding: 0 5px;
 }
+.links li.dropdown{padding-right:0;}
 ul, ol, li {
 list-style: none;
 }
@@ -129,7 +130,7 @@ list-style: none;
 	font-size:18px;
 }
 
-.ui-tabs-panel{padding-top:10px;}
+.ui-tabs-panel{padding:10px 10px 0;}
 
 
 

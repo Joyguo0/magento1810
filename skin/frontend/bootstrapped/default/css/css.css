@@ -49,6 +49,7 @@ header .row{
 	max-width:1240px;
 	margin:0 auto;
 }
+header{margin-bottom:6px;}
 header .links{
 	padding:8px 0;
 	float:right;
@@ -76,6 +77,9 @@ header .links li a{
 	background:#FFF;
 }
 .navbar-form{padding:0;/*width:15%;*/}
+.navwrap .navbg .btn{
+	border-radius:4px;
+}
 .about{
     margin: 0 auto;
     max-width: 1240px;
@@ -129,7 +133,7 @@ header .links li a{
 .about .col-sm-3{
 	background:#F1F1F1;
     border-bottom: 2px solid #AF2121;
-	margin-bottom:25px;
+	margin-bottom:15px;
 }
 .about .col-xs-6:hover{
 	border:0;
@@ -193,7 +197,30 @@ header .links li a{
 .footer a{color:#FFF;}
 .navbar-left{margin:10px 0;}
 .form-control{font-size:12px;}
-
+#focus .btnBg {
+    bottom: 0;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 1230px;
+}
+#focus .btn {
+    bottom:20px;
+    height: 10px;
+    padding: 5px 10px;
+    position: absolute;
+    right: 6px;
+    text-align: right;
+    max-width: 1220px;
+}
+#focus .btn span {
+    background:#FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin-left:5px;
+    width:20px;
+}
 /* 列表页*/
 .content,.detail{
 	max-width:1240px;
@@ -202,7 +229,6 @@ header .links li a{
 	border-radius:2px;
 	background:#F8F8F8;
 }
-.content{padding:10px 0 20px;}
 .crumb{margin-bottom:10px;padding:0 10px;}
 .container.content{padding-top:0;background:#FFF;}
 /*.content .col-md-3{
@@ -707,8 +733,53 @@ h1{margin-bottom:6px;}
 .nav-container{
 	z-index:999;
 }
+.banner {
+    max-width: 1240px;
+	overflow: hidden;
 
-
-
-
-
+}
+#focus {
+    position: relative;
+    max-width: 1240px;
+	overflow:hidden;
+}
+#focus ul {
+    position: absolute;
+}
+#focus ul li {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 1240px;
+	
+}
+/*@media (min-width: 200px) {
+#focus ul li {
+    width: 33.3333%;
+}
+#focus {
+	height:78px;
+}
+#focus .btn{bottom:15px;right:0;}
+#focus .btn span{height:5px;width:10px;}
+}
+@media (min-width:1240px) {
+#focus ul li {
+    width: 33.3333%;
+}
+#focus {
+   
+	height:336px;
+}
+#focus .btn{bottom:20px;right:6px;}
+#focus .btn span{height:10px;width:20px;}
+}
+@media (max-width: 767px) {
+	#focus ul li {
+    width: 33.3333%;
+}
+#focus {
+   
+	height:207px;
+}
+}*/

@@ -694,6 +694,17 @@ h1{margin-bottom:6px;}
 	background:#000;
 }
 .navbar .level-top{margin:0;}
+.navbar .parent a.level-top:after{
+	content:"\F0d7";
+	display: inline-block;
+    float: right;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    opacity: 0.8;
+    text-decoration: inherit;
+	padding-left:4px;
+}
 .testst{background:#000;}
 .about .info{
     font-size: 1.1em;
@@ -733,18 +744,18 @@ h1{margin-bottom:6px;}
 .nav-container{
 	z-index:999;
 }
-.banner {
+/*.banner {
     max-width: 1240px;
 	overflow: hidden;
 
 }
-#focus {
+#focus{
+    float: left;
     position: relative;
-    max-width: 1240px;
-	overflow:hidden;
+	width:100%;
 }
 #focus ul {
-    position: absolute;
+    position: relative;
 }
 #focus ul li {
     float: left;
@@ -753,7 +764,21 @@ h1{margin-bottom:6px;}
     width: 1240px;
 	
 }
-/*@media (min-width: 200px) {
+#focus ul > * {
+    margin-left: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#focus ul li img{
+	display:block;
+}
+.row {
+    margin:0 auto 6px;
+    max-width: 95em;
+    width: 100%;
+}
+@media (min-width: 200px) {
 #focus ul li {
     width: 33.3333%;
 }
@@ -783,3 +808,90 @@ h1{margin-bottom:6px;}
 	height:207px;
 }
 }*/
+.orbit-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.large-12 {
+    position: relative;
+    width: 100%;
+}
+ .row.banner > .columns {
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+.orbit-container .orbit-slides-container {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.orbit-container .orbit-slides-container > *:first-child {
+    margin-left: 0;
+}
+.orbit-container .orbit-slides-container > * {
+    margin-left: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.orbit-container .orbit-slides-container img {
+    display: block;
+    max-width: 100%;
+}
+.orbit-bullets {
+    left: 50%;
+    margin: 0 auto 30px -2em;
+    overflow: hidden;
+    position: absolute;
+    top: 90%;
+    width:6em;
+    z-index: 999;
+}
+.orbit-bullets li {
+    background:#FFF;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height:0.8em;
+    margin-right: 6px;
+    width:1.5em;
+}
+.orbit-bullets li.active {
+    background:#D12421;
+}
+.flash_bar{
+	position:absolute;
+	width:6em;
+	right:1em;
+	bottom:1em;
+	overflow:hidden;
+}
+.flash_bar .dq{
+	width:1.5em;
+	height:0.8em;
+	float:left;
+	margin-right:3px;
+	display:block;
+	background:#FFF;
+}
+.flash_bar .no{
+	width:1.5em;
+	height:0.8em;
+	float:left;
+	margin-right:3px;
+	display:block;
+	background:#FFF;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+
+
+
+
+
+
+

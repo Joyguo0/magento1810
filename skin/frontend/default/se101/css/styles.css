@@ -26,7 +26,7 @@
 /* Reset ================================================================================= */
 * { margin:0; padding:0; }
 
-body{  background: url("../images/flames-repeat.jpg")repeat-x scroll center top #000000;font:14px/150% '微软雅黑'; color:#333; text-align:left; }
+body{  background:url(../images/flames-repeat.jpg) repeat-x scroll center top #000000;font:14px/150% '微软雅黑'; color:#333; text-align:left; }
 
 img           { border:0; vertical-align:top; }
 
@@ -963,7 +963,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* View Type: Grid */
 .products-grid { border-bottom:1px solid #d9ddd3;  position:relative;padding-bottom:15px; }
 .products-grid.last { border-bottom:0; }
-.products-grid li.item { float:left;text-align:center;width:25%;margin-top:15px;}
+.products-grid li.item { float:left;text-align:center;width:24.9%;margin-top:15px;}
 .products-grid .product-image { display:block;margin:0 auto;}
 .products-grid .product-name {margin:5px 0;font-size:13px;color:#203548;text-align:center;height:25px;overflow:hidden;line-height:25px;padding:0 18px;}
 
@@ -986,7 +986,7 @@ tr.summary-details-excluded { font-style:italic; }
 .products-list{border:1px solid #ddd; border-top:0; border-bottom:0; padding:5px 3px 0 3px;}
 .products-list li.item { border-bottom:1px solid #d9ddd3;  }
 .products-list li.item.last { border-bottom:0; }
-.products-list .product-image { float:left; width:135px; height:135px; }
+.products-list .product-image { float:left; width:129px; height:129px;border:1px solid #EEE;padding:3px;}
 .products-list .product-shop { margin-left:150px; }
 .products-list .product-name { margin:0 0 5px; font-weight:bold; font-size:13px; color:#203548; }
 .products-list .product-name a { color:#203548; }
@@ -1001,8 +1001,8 @@ tr.summary-details-excluded { font-style:italic; }
 .products-list .list-right{width:67%; float:left;}
 .products-list .list-left .price-box{float:none;}
 .products-list  .list-inner{padding:12px 10px;}
-.products-list  .item-featured .list-outer{background:url(../images/list_top.jpg) no-repeat 3px 3px; }
-.products-list  .item-featured .list-inner{background:url(../images/list_bg.jpg) no-repeat 3px bottom;}
+/*.products-list  .item-featured .list-outer{background:url(../images/list_top.jpg) no-repeat 3px 3px; }
+.products-list  .item-featured .list-inner{background:url(../images/list_bg.jpg) no-repeat 3px bottom;}*/
 
 /* ======================================================================================= */
 

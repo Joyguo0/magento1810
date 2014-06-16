@@ -177,7 +177,7 @@ ul#topnav .sub ul li a:hover{text-decoration:underline;}
 	padding-left:20px;
 }
 .content .list li{
-	margin:20px 15px 0 0;
+	margin:20px 14px 0 0;
 	width:226px;
 	background:#F1F1F1;
 	border-bottom:2px solid #AF2121;
@@ -281,7 +281,7 @@ ul#topnav .sub ul li a:hover{text-decoration:underline;}
 	float:left;
 	margin-left:9px;
 	border: 1px solid #FFFFFF;
-    margin: 12px 15px 0 0;
+    margin: 12px 14px 0 0;
 }
 .about .aboutL ul li.last,.content .list ul li.last{margin-right:0;}
 .about .aboutL ul li:last-child,.content .list li:last-child{margin-right:0;}

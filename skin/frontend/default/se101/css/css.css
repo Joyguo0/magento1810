@@ -137,6 +137,7 @@ ul#topnav .sub ul li a:hover{text-decoration:underline;}
 	margin:6px auto;
 	background:#FFF;
 	height:350px;
+	border-radius:4px;
 }
 .banner a{
 	display:block;

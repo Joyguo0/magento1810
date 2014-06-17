@@ -35,6 +35,7 @@
 <div class="language-switcher">
     <div class="language-switcherA">
     <?php foreach ($this->getStores() as $k=>$_lang): ?>
+        <?php if($_lang->getCode()=='phone'){continue;}?>
         <?php $_selected = ($_lang->getId() == $this->getCurrentStoreId()) ? 'selected"selected"' : '' ?>
         <a class="<?php echo $_selected ?>"  href="<?php echo $_lang->getCurrentUrl() ?>"><?php echo $this->htmlEscape($_lang->getName()) ?></a> &nbsp;&nbsp;    
     <?php endforeach; ?>

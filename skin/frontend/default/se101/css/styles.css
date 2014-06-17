@@ -565,8 +565,8 @@ tr.summary-details-excluded { font-style:italic; }
 /* Header ================================================================================ */
 .header img{width:1240px;}
 .logo { float:left; }
-.header-container {max-width:1240px; margin:5px auto;  }
-.header {  text-align:right; position:relative; z-index:999;margin-bottom:10px; }
+.header-container {max-width:1240px; margin:6px auto;}
+.header {  text-align:right; position:relative; z-index:999;margin-bottom:6px; }
 .header .logo { float:left; margin:3px 0 10px 12px; text-decoration:none !important; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 .header h1.logo { margin:0; }
@@ -1838,7 +1838,7 @@ ul.level0:after,
 .header-middle{wdith:480px; float:left; margin-top:12px;}
 #cat {border: medium none; color: #838383;font-size: 11px;line-height: 1.5;padding-top: 1px;width: 94px;}
 #search_mini_form{ }
-#search_mini_form table{ margin:5px 0 3px 15px; line-height:12px;}
+#search_mini_form table{ margin:5px 0 3px 15px; line-height:12px;width:90%;}
 .search_term ul.term-list li{float:left; padding-left:5px; line-height:13px;}
 .search_term ul.term-list li a{font:italic 11px Tahoma}
 .search_term ul.term-list li.icon-term{font:italic 11px Tahoma}
@@ -1915,6 +1915,7 @@ ul.level0:after,
 	line-height:45px;
 }
 .right-top-nav ul{background:url(../images/c-bg.jpg) repeat-x;margin-right:5px;height:45px; overflow:hidden;}
+.right-top-nav ul li.right-top{height:45px;line-height:45px;}
 /* glider */
 .top-banners{height:180px;margin-bottom:8px;}
 #slider { 

@@ -178,7 +178,7 @@ ul#topnav .sub ul li a:hover{text-decoration:underline;}
 	padding-left:20px;
 }
 .content .list li{
-	margin:20px 14px 0 0;
+	margin:20px 12px 0 0;
 	width:226px;
 	background:#F1F1F1;
 	border-bottom:2px solid #AF2121;
@@ -1127,6 +1127,105 @@ button, input, select, textarea {
 #focus .preNext{width:45px;height:100px;position:absolute;top:90px;background:url(img/sprite.png) no-repeat 0 0;cursor:pointer;}
 #focus .pre{left:0;}
 #focus .next{right:0;background-position:right top;}
+
+
+ 
+	.containers{max-width:1240px;margin:6px auto;}
+.containers #slides {
+      display: none;
+	  position:relative;
+	  padding: 0.3125em;
+	  background:#FFF;
+	  border-radius:4px;
+    }
+.containers .slidesjs-pagination {
+      margin: 6px 0 0;
+      list-style: none;
+	  position:absolute;
+	  right:1em;
+	  bottom:1em;
+	  z-index:1000;
+    }
+.containers .slidesjs-pagination li {
+      float: left;
+      margin: 0 2px;
+    }
+.containers .slidesjs-pagination li a {
+      display: block;
+      width:1.2em;
+      height:0em;
+      padding-top:0.8em;
+      background:#FFF;
+	  opacity:0.5;
+	  filter:alpha(opacity=50);
+      float: left;
+      overflow: hidden;
+    }
+
+.containers .slidesjs-pagination li a.active,
+.containers .slidesjs-pagination li a:hover.active {
+      background:#FFF;
+	  opacity:1;
+	  filter:alpha(opacity=100);
+    }
+.containers .slidesjs-pagination li a:hover {
+      background:#FFF;
+    }
+.containers .navbar {
+      overflow: hidden
+    }
+.containers #slides {
+      display: none
+    }
+
+    .containers {
+      margin:0 auto 6px;
+    }
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .containers{
+        width: auto
+      }
+    }
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .containers{
+        width: auto
+      }
+.containers .slidesjs-pagination {
+	  position:absolute;
+	  right:0.6em;
+	  bottom:0.6em;
+	  z-index:1000;
+    }
+.containers .slidesjs-pagination li a {
+      width:0.8em;
+      padding-top:0.4em;
+	  _width:0.8em;
+      _padding-top:0.4em;
+    }
+.containers #slides {
+	  padding: 0.2em;
+    }
+    }
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .containers{
+        width: 724px
+      }
+    }
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .containers{
+        width: 1240px
+      }
+    }
+
+
 
 
 

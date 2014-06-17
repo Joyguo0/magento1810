@@ -565,7 +565,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* Header ================================================================================ */
 .header img{width:1240px;}
 .logo { float:left; }
-.header-container {max-width:1240px; margin:6px auto;}
+.header-container {max-width:1240px; margin:6px auto;*margin-bottom:0;}
 .header {  text-align:right; position:relative; z-index:999;margin-bottom:6px; }
 .header .logo { float:left; margin:3px 0 10px 12px; text-decoration:none !important; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }

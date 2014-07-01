@@ -55,14 +55,12 @@ jQuery(function($){
 	    } 
 	    if(bs.versions.mobile){
 	        if(bs.versions.android||bs.versions.iPhone||bs.versions.iPad||bs.versions.ios){
-	            <?php header('Location: '.Mage::getBaseUrl().'?__store=phone');?>
+	            <?php header('Location: '.Mage::getBaseUrl().'?__store=phone');exit();?>
 
 	        }else{
-	            <?php header('Location: '.Mage::getBaseUrl().'?__store=default');?>
+	            <?php header('Location: '.Mage::getBaseUrl().'?__store=default');exit;?>
 	        }
-	    }else{
-	    	<?php header('Location: '.Mage::getBaseUrl().'?__store=default');?>
-		}
+	    }
 });
 
 </script>

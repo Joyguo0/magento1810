@@ -49,11 +49,6 @@
                 </action>
             </block>
         </reference>
-        <reference name="top.links">
-            <block type="clnews/settings" name="top.clnews.link">
-                <action method="getTopLink"></action>
-            </block>
-        </reference>
     </default>
 
     <clnews_index_index>

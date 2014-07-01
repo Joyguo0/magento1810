@@ -60,7 +60,9 @@ jQuery(function($){
 	        }else{
 	            <?php header('Location: '.Mage::getBaseUrl().'?__store=default');?>
 	        }
-	    }
+	    }else{
+	    	<?php header('Location: '.Mage::getBaseUrl().'?__store=default');?>
+		}
 });
 
 </script>

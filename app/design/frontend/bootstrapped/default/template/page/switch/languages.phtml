@@ -32,7 +32,7 @@
         </ul>
     </li>
 <?php endif; ?>
- -->
+
 <script type="text/javascript">
 jQuery(function($){
 	var bs={
@@ -55,12 +55,12 @@ jQuery(function($){
 	    } 
 	    if(bs.versions.mobile){
 	        if(bs.versions.android||bs.versions.iPhone||bs.versions.iPad||bs.versions.ios){
-	            <?php header('Location: '.Mage::getBaseUrl().'?__store=phone');exit();?>
+	            <?php //header('Location: '.Mage::getBaseUrl().'?__store=phone');exit();?>
 
 	        }else{
-	            <?php header('Location: '.Mage::getBaseUrl().'?__store=default');exit;?>
+	            <?php //header('Location: '.Mage::getBaseUrl().'?__store=default');exit;?>
 	        }
 	    }
 });
 
-</script>
+</script> -->

@@ -26,15 +26,27 @@
 ?>
 <?php
 /**
- * @deprecated after 1.4.0.1
+ * Top menu for store
+ *
+ * @see Mage_Catalog_Block_Navigation
  */
 ?>
-<?php if($toplinks && is_array($toplinks)): ?>
-<ul class="links">
-    <?php echo $this->getChildHtml() ?>
-    <?php foreach($toplinks as $_toplink): ?>
-    <li<?php if($_toplink['first']||$_toplink['last']): ?> class="<?php if($_toplink['first']): ?>first<?php endif; ?>"<?php endif; ?> <?php echo $_toplink['liParams'] ?>><?php echo $_toplink['beforeText'] ?><a <?php echo $_toplink['aParams'] ?>><?php echo $_toplink['innerText'] ?></a><?php echo $_toplink['afterText'] ?></li>
-    <?php endforeach; ?>
-    <li class="last"><a <?php echo $_toplink['aParams'] ?> href='/'><?php echo $this->__('home') ?></a></li>
-</ul>
-<?php endif; ?>
+<?php
+/**
+ * $this->renderCategoriesMenuHtml() supports optional arguments:
+ * int Level number for list item class to start from
+ * string Extra class of outermost list items
+ * string If specified wraps children list in div with this class
+ */
+?>
+<?php $_menu = $this->renderCategoriesMenuHtml(0,'level-top') ?>
+<?php if($_menu): ?>
+<div class="nav-container">
+    <ul id="nav">
+        <?php echo $_menu ?>
+            <li class="level0 level-top"><a href="aboutus" class="level-top"><span>关于闽太</span></a></li>
+    <li class="level0 level-top"><a href="addtous" class="level-top"><span>招商加盟</span></a></li>
+    <li class="level0 level-top last"><a href="contactus" class="level-top"><span>联系我们</span></a></li>
+    </ul>
+</div>
+<?php endif ?>

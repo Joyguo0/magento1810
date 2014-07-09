@@ -25,3 +25,10 @@
 /media/catalog/product/cache
 /media
 /app/design/frontend/base/default/template/mw_developertoolbar
+/app/code/community/JakeSharp/Waterlee/Block/Topmenu.php
+/app/code/community/JakeSharp/Waterlee/Helper/Data.php
+/app/code/community/JakeSharp/Waterlee/etc/adminhtml.xml
+/app/code/community/JakeSharp/Waterlee/etc/config.xml
+/app/code/community/JakeSharp/Waterlee/etc/system.xml
+/app/design/frontend/base/default/layout/mw_developertoolbar.xml
+/app/etc/modules/JakeSharp_Waterlee.xml

@@ -43,11 +43,13 @@
 <?php if($_menu): ?>
 <div class="nav-container">
     <ul id="nav">
-    	<li class="level0 level-top"><a href="/" class="level-top"><span>首页</span></a></li>
+    	<li class="level0 level-top"><a href="/" class="level-top"><span><?php echo $this->__('Home')?></span></a></li>
         <?php echo $_menu ?>
+        <?php if(Mage::app()->getStore()->getCode()=='default'):?>
             <li class="level0 level-top"><a href="/aboutus" class="level-top"><span>关于闽太</span></a></li>
-    <li class="level0 level-top"><a href="/addtous" class="level-top"><span>招商加盟</span></a></li>
-    <li class="level0 level-top last"><a href="/contactus" class="level-top"><span>联系我们</span></a></li>
+		    <li class="level0 level-top"><a href="/addtous" class="level-top"><span>招商加盟</span></a></li>
+		    <li class="level0 level-top last"><a href="/contactus" class="level-top"><span>联系我们</span></a></li>
+    	<?php endif;?>
     </ul>
 </div>
 <?php endif ?>

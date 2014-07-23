@@ -20,27 +20,19 @@
  *
  * @category    design
  * @package     base_default
- * @copyright   Copyright (c) 2010 Magento Inc. (http://www.magentocommerce.com)
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
- */
-/**
- * @var Mage_Page_Block_Html_Header $this
  */
 ?>
 
-<?php echo $this->getChildHtml('store_switcher') ?>
 
-<div align="CENTER" style="margin:5px 0px;"><font face="" size="+1" color="White"><b><i><?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('top_font')->toHtml();?></i></b></font></div>
-
-<div class="header-container">
-    <div class="header">
-		<?php echo $this->getChildHtml('topLinks') ?>
-		<a href='<?php echo Mage::getBaseUrl()?>'><img alt="" src="<?php echo Mage::getDesign()->getSkinUrl('images/FF-Web-Header.gif'); ?>"></a>
-        
-        <?php echo $this->getChildHtml('topContainer'); ?>
-		
+<?php if(count($this->getGroups())>1): ?>
+<div class="language-switcher">
+   	<div class="language-switcherA">
+    <?php foreach ($this->getGroups() as $_group): ?>
+        <?php $_selected = ($_group->getId()==$this->getCurrentGroupId()) ? ' selected="selected"' : '' ?>
+         <a class="<?php echo $_selected ?>" href="<?php echo $_group->getHomeUrl() ?>" ><?php echo $this->escapeHtml($_group->getName()) ?></a>
+    <?php endforeach; ?>
     </div>
-     <?php echo $this->getChildHtml('topMenu') ?>
-     
 </div>
-
+<?php endif; ?>

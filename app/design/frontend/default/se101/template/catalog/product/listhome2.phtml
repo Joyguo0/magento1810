@@ -10,7 +10,7 @@
 		<?php $i=0; foreach ($_productCollection as $_product): ?>
 		<li><a href="<?php echo $_product->getProductUrl() ?>"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(200); ?>" /></a>
 			<div class="bottom">
-				<b title="分享数"> <?php echo rand(0,1000)?> 人喜欢 </b> <span class="J_card fr"> <?php echo Mage::helper('core')->currency($_product->getPrice(), true, false);?> </span>
+				<b> <?php echo rand(0,1000).$this->__('Shares')?> </b> <span class="J_card fr"> <?php echo Mage::helper('core')->currency($_product->getPrice(), true, false);?> </span>
 			</div>
 			<div class="follow followbox">
 				<h4><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h4>

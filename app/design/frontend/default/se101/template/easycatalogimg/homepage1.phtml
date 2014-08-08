@@ -17,7 +17,7 @@
 		</a>
 			<div class="info">
 				<p><?php echo $this->htmlEscape($_category->getName()) ?></p>
-				<a class="more" href="<?php echo $cur_category->getUrl() ?>">查看该系列</a>
+				<a class="more" href="<?php echo $cur_category->getUrl() ?>"><?php echo Mage::helper('catalog')->__('View Category');?></a>
 			</div></li>
 		<?php }?>
 	</ul>

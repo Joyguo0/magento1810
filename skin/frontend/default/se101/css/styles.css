@@ -26,7 +26,7 @@
 /* Reset ================================================================================= */
 * { margin:0; padding:0; }
 
-body{  background:url(../images/flames-repeat.jpg) repeat-x scroll center top #000000;font:14px/150% '微软雅黑'; color:#333; text-align:left; }
+body{  background:url(../images/flames-repeat.jpg) repeat-x scroll center 40% #000000;font:14px/150% '微软雅黑'; color:#333; text-align:left; }
 
 img           { border:0; vertical-align:top; }
 
@@ -563,10 +563,10 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* Header ================================================================================ */
-.header img{width:1240px;}
+.header img{width:100%;}
 .logo { float:left; }
-.header-container {max-width:1240px; margin:6px auto;*margin-bottom:0;}
-.header {  text-align:right; position:relative; z-index:999;margin-bottom:6px; }
+.header-container {margin:6px auto;*margin-bottom:0;}
+.header {  text-align:right; position:relative; z-index:999; }
 .header .logo { float:left; margin:3px 0 10px 12px; text-decoration:none !important; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 .header h1.logo { margin:0; }
@@ -600,6 +600,7 @@ tr.summary-details-excluded { font-style:italic; }
     list-style: none outside none;
     margin: 0;
     padding: 0;
+	padding-left:10%;
 	background:url(../images/c-bg.jpg) repeat-x 5px 0;
 	margin-left:5px;
   }

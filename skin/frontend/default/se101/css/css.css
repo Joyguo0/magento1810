@@ -1134,9 +1134,6 @@ button, input, select, textarea {
 .containers #slides {
       display: none;
 	  position:relative;
-	  padding: 0.3125em;
-	  background:#FFF;
-	  border-radius:4px;
     }
 .containers .slidesjs-pagination {
       margin: 6px 0 0;

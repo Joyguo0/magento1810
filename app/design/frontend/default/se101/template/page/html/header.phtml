@@ -27,15 +27,13 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
-
-<?php echo $this->getChildHtml('store_switcher') ?>
-
-<div align="CENTER" style="margin:5px 0px;"><font face="" size="+1" color="White"><b><i><?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('top_font')->toHtml();?></i></b></font></div>
-
+<div class='toplinks_con'>
+<?php echo $this->getChildHtml('topLinks') ?>
+</div>
 <div class="header-container">
-    <div class="header">
-		<?php echo $this->getChildHtml('topLinks') ?>
-		<a href='<?php echo Mage::getBaseUrl()?>'><img alt="" src="<?php echo Mage::getDesign()->getSkinUrl('images/bg.jpg'); ?>"></a>
+    <div class="header" style="background:url(<?php echo Mage::getDesign()->getSkinUrl('images/bg.jpg'); ?>) no-repeat center center;height:81px;">
+
+		<?php echo $this->getChildHtml('store_switcher') ?>
         
         <?php echo $this->getChildHtml('topContainer'); ?>
 		

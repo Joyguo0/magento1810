@@ -39,7 +39,31 @@
 <div class="wrapper">
     <?php echo $this->getChildHtml('global_notices') ?>
     <div class="page">
+<?php
+$routeName = Mage::app()->getRequest()->getRouteName();
+$identifier = Mage::getSingleton('cms/page')->getIdentifier();
+?>
         <?php echo $this->getChildHtml('header') ?>
+<?php if ($routeName == 'cms' && $identifier == 'home') : ?>
+<div class='main'>
+	<div id="slides">
+	<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'wysiwyg/TB2HFl0XVXXXXblXpXXXXXXXXXX-671643399.jpg'?>" alt="" height="500px" /> 
+	<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'wysiwyg/TB2tW1hapXXXXaGXpXXXXXXXXXX-671643399.jpg'?>" alt="" height="500px" /> 
+	<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'wysiwyg/TB2jWanapXXXXXaXpXXXXXXXXXX-671643399.jpg'?>" alt="" height="500px" />
+	</div>
+	<script type="text/javascript">// <![CDATA[
+    	jQuery(function($) {
+      		$('#slides').slidesjs({
+       	 	width:2000,
+        	height:5000,
+        	navigation: true
+     		});
+   	 });
+// ]]></script>
+</div>
+<?php endif ; ?>
+        <?php //echo $this->getChildHtml('header') ?>
+
         <div class="main-container col2-left-layout">
             <div class="main">
                 <?php echo $this->getChildHtml('breadcrumbs') ?>
@@ -48,8 +72,15 @@
                     <?php echo $this->getChildHtml('content') ?>
                 </div>
                 <div class="col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>
-                
+               <?php if ($routeName == 'cms' && $identifier == 'home') : ?>
+
             	<?php echo $this->getLayout()->createBlock('bestsellers/list')->setTemplate('catalog/product/listcategoryfooter.phtml')->setLimit(5)->toHtml();?>
+<?php else:?>
+	<?php echo $this->getLayout()->createBlock('bestsellers/list')->setTemplate('catalog/product/listcategoryfooter.phtml')->setLimit(5)->toHtml();?>
+
+<?php endif ; ?>
+
+ 
             </div>
         </div>
 	<div class="footer_aboutus">

@@ -316,6 +316,7 @@ Product view
                     </action>
                     <action method="append">
                         <block>product.info.addtocart</block>
+	padding-toddp:2px;
                     </action>
                 </block>
 

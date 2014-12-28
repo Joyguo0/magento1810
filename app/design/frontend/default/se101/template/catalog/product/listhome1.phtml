@@ -1,21 +1,32 @@
 <?php
     $_productCollection=$this->getLoadedProductCollection();
     $_helper = $this->helper('catalog/output');
+$rcount=$this->getRcount()?$this->getRcount():6;;
 ?>
+<div class="about clearfix">
+<div class="aboutL">
 <div class="list list2">
 	<h2>
-		<?php echo $this->getTitle() ?>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $this->getTitle() ?>
+		<span><a href='<?php echo Mage::getUrl("catalog/category/view",array("id"=>$this->getData("category_id")))?>'>查看更多>></a></span>
 	</h2>
 	<ul>
-		<?php $i=0; foreach ($_productCollection as $_product): ?>
-		<li><a href="<?php echo $_product->getProductUrl() ?>"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(200); ?>" /></a>
-			<div class="bottom">
-				<b> <?php echo rand(0,1000).$this->__('Shares')?></b> <span class="J_card fr"> <?php echo Mage::helper('core')->currency($_product->getPrice(), true, false);?> </span>
-			</div>
+		<?php $i=0; foreach ($_productCollection as $_product): 
+			$i++;
+			if($i>$rcount){
+				break;
+			}
+		?>
+		<li><a href="<?php echo $_product->getProductUrl() ?>"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(308); ?>" /></a>
 			<div class="follow followbox">
 				<h4><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h4>
+			</div>
+			<div class="bottom">
+				<b>  <?php echo Mage::helper('core')->currency($_product->getPrice(), true, false);?> </b> <span class="J_card fr"> <a href="<?php echo $_product->getProductUrl() ?>">立即购买</a></span>
 			</div>
 		</li>
 		<?php endforeach ?>
 	</ul>
+</div>
+</div>
 </div>

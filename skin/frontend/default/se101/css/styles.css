@@ -99,7 +99,6 @@ ul,ol         { list-style:none; }
 .page-print { background:#fff; padding:25px 30px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
 .page-popup { background:#fff; padding:25px 30px; text-align:left; }
-.main-container {  }
 .main { margin:0 auto; min-height:400px; padding:10px 0;  text-align:left;background:#fff; }
 
 /* Base Columns */
@@ -2264,4 +2263,10 @@ legend {
 .productTitle a .H, .productTitle a em {color: #C60;}
 .reco_wrap ul li .productTitle a:hover{color:#C10001;}
 
-
+#search-leftbox { padding:0 0 15px; background:#dbdbdb; }
+#search-leftbox .block-title { padding:14px 10px; font-size:12px; font-weight:bold; line-height:14px; border-bottom:1px solid #f3f2f2; }
+#search-leftbox li.level-top { background:#dbdbdb; padding:15px 10px 0; }
+#search-leftbox a.level-top { display:block; font-size:12px; line-height:13px; padding:0 0 0 16px; background:url(../images/sprite.gif) no-repeat 0 -2700px; }
+#search-leftbox li.expand a.level-top { background-position:0 -2730px; }
+#search-leftbox ul.level0 { padding:10px 0 0 15px; display:none; }
+#search-leftbox .level0 li { padding:0 0 7px; }

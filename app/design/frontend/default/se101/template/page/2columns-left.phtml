@@ -72,14 +72,7 @@ $identifier = Mage::getSingleton('cms/page')->getIdentifier();
                     <?php echo $this->getChildHtml('content') ?>
                 </div>
                 <div class="col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>
-               <?php if ($routeName == 'cms' && $identifier == 'home') : ?>
-
-            	<?php echo $this->getLayout()->createBlock('bestsellers/list')->setTemplate('catalog/product/listcategoryfooter.phtml')->setLimit(5)->toHtml();?>
-<?php else:?>
-	<?php echo $this->getLayout()->createBlock('bestsellers/list')->setTemplate('catalog/product/listcategoryfooter.phtml')->setLimit(5)->toHtml();?>
-
-<?php endif ; ?>
-
+	<?php echo $this->getLayout()->createBlock('catalog/product_list')->setTemplate('catalog/product/listcategoryfooter.phtml')->setLimit(16)->toHtml();?>
  
             </div>
         </div>

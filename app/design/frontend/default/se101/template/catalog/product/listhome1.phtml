@@ -1,13 +1,13 @@
 <?php
     $_productCollection=$this->getLoadedProductCollection();
     $_helper = $this->helper('catalog/output');
-$rcount=$this->getRcount()?$this->getRcount():6;;
+$rcount=$this->getRcount()?$this->getRcount():12;
 ?>
 <div class="about clearfix">
 <div class="aboutL">
 <div class="list list2">
 	<h2>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $this->getTitle() ?>
+		<?php echo $this->getTitle() ?>
 		<span><a href='<?php echo Mage::getUrl("catalog/category/view",array("id"=>$this->getData("category_id")))?>'>查看更多>></a></span>
 	</h2>
 	<ul>

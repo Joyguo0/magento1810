@@ -21,6 +21,7 @@
 .latest-wrapper .about .list li .fr{display:none}
 .latest-wrapper .about .list li .bottom b{color:#fff; background:url("../images/home-pricebg.png") no-repeat;width:153px; height:41px; line-height:41px; }
 #search-leftbox{background:none}
+#search-leftbox .block-title{height: 47px; background: url(../images/home-catebg.png) no-repeat; padding: 0; margin: 0;border:0;text-indent: -9999em}
 #search-leftbox li.level-top{background:none; padding:0}
 #search-leftbox li.level-top a{background:#c71412; line-height:30px; height:30px; margin:3px; font-size:14px}
 #search-leftbox .level0 li{padding:0}

@@ -36,18 +36,21 @@
     $_helper = $this->helper('catalog/output');
 ?>
 <div class="reco_wrap">
-	<h2><?php echo $this->__("Top recommended") ?></h2>
+	<h2><?php echo $this->__("Promotions") ?><span class="subtitle"><?php echo $this->__("Promotions subtitle") ?></span>
+
+    <span><a href="http://www.mintaicorp.com/catalog/category/view/id/3/"><?php echo $this->__("view more") ?>&gt;&gt;</a></span></h2>
         <ul>
     	<?php $i=0; foreach ($_productCollection as $_product): ?>
             <li>
                <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="productImg">
-               <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>" width="135" height="135" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
+               <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(227); ?>" width="227" height="227" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
                </a>
                 <?php echo $this->getPriceHtml($_product, true) ?>
-				<p class="productTitle"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></p>
+				
 				<?php if($_product->getRatingSummary()): ?>
                 <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
                 <?php endif; ?>
+                <p class="productTitle"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></p>
             </li>
 		<?php if($i==5) {break;} ?>
         <?php endforeach ?>

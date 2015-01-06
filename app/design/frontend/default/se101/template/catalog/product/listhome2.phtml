@@ -7,8 +7,11 @@ $rcount=$this->getRcount()?$this->getRcount():4;
 <div class="aboutL">
 <div class="list list2">
 	<h2>
-		<?php echo $this->getTitle() ?>
-		<span><a href='<?php echo Mage::getUrl("catalog/category/view",array("id"=>$this->getData("category_id")))?>'>查看更多>></a></span>
+<?php echo $this->getTitle() ?>
+	<span class="subtitle">	<?php echo $this->getSubTitle() ?></span>
+
+
+		<span><a href='<?php echo Mage::getUrl("catalog/category/view",array("id"=>$this->getData("category_id")))?>'><?php echo $this->__('view more>>')?></a></span>
 	</h2>
 	<ul>
 		<?php $i=0; foreach ($_productCollection as $_product): 

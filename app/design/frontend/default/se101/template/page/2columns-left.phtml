@@ -44,7 +44,7 @@ $routeName = Mage::app()->getRequest()->getRouteName();
 $identifier = Mage::getSingleton('cms/page')->getIdentifier();
 ?>
         <?php echo $this->getChildHtml('header') ?>
-<?php if ($routeName == 'cms' && $identifier == 'home') : ?>
+<?php if ($routeName == 'cms' && ($identifier == 'home' || $identifier='mintaihome')) : ?>
 <div class='main'>
 	<div id="slides">
 	<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'wysiwyg/TB2HFl0XVXXXXblXpXXXXXXXXXX-671643399.jpg'?>" alt="" height="500px" /> 
@@ -72,7 +72,22 @@ $identifier = Mage::getSingleton('cms/page')->getIdentifier();
                     <?php echo $this->getChildHtml('content') ?>
                 </div>
                 <div class="col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>
-	<?php echo $this->getLayout()->createBlock('catalog/product_list')->setTemplate('catalog/product/listcategoryfooter.phtml')->setLimit(16)->toHtml();?>
+	
+	<?php  if ($routeName == 'cms' && ($identifier == 'home' || $identifier='mintaihome')){?>
+		<div class="latest-wrapper">
+		<?php
+		$category_id=$identifier=='home'?18:51;
+		$c2=$identifier=='home'?5:25;
+	echo $this->getLayout()->createBlock('catalog/product_list')->setTemplate('catalog/product/listhome2.phtml')->setCategoryId($category_id)->setTitle($this->__('New Product'))->setSubTitle($this->__('Supply expert fire system'))->toHtml();?>
+
+		</div>
+
+		<?php	echo $this->getLayout()->createBlock('catalog/product_list')->setTemplate('catalog/product/listcategoryfooter.phtml')->setCategoryId($c2)->setLimit(16)->toHtml();
+		}else{
+	 	 	//echo $this->getLayout()->createBlock('bestsellers/list')->setTemplate('catalog/product/listcategoryfooter2.phtml')->setLimit(5)->toHtml();
+
+		}
+	?>
  
             </div>
         </div>

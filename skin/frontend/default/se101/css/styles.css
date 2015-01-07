@@ -26,7 +26,7 @@
 /* Reset ================================================================================= */
 * { margin:0; padding:0; }
 
-body{  background:url(../images/flames-repeat-new.jpg) repeat-x  center 60% #000000;font:14px/150% '微软雅黑'; color:#333; text-align:left; }
+body{  background:url(../images/flames-repeat-new.png) repeat-x  center 60% #000000;font:14px/150% '微软雅黑'; color:#333; text-align:left; }
 .toplinks_con{background: url(../images/toplinksbg.png) repeat-x;height:30px;width:100%;text-align:right;line-height:30px;}
 .toplinks_con ul{margin-right:5%;}
 .toplinks_con a{color:#B72120;}
@@ -1849,12 +1849,12 @@ ul.level0:after,
 .header-middle{wdith:480px; float:left; margin-top:12px;}
 #cat {border: medium none; color: #838383;font-size: 11px;line-height: 1.5;padding-top: 1px;width: 94px;}
 #search_mini_form{ }
-#search_mini_form table{ margin:5px 0 3px 15px; line-height:12px;width:90%;}
+#search_mini_form table{ margin:5px 0 3px 0; line-height:12px;width:90%;}
 .search_term ul.term-list li{float:left; padding-left:5px; line-height:13px;}
 .search_term ul.term-list li a{font:italic 11px Tahoma}
 .search_term ul.term-list li.icon-term{font:italic 11px Tahoma}
 .search_term{padding-left:20px; width:472px; float:left;}
-.input-live-search {border: medium none;color: #838383;margin: 0 0 0 10px;vertical-align: top;width: 150px;height:15px;border:1px solid #BCBBBB;box-shadow:0 1px 2px rgba(0, 0, 0, 0.1) inset;padding: 4px 4px 4px 6px;/*border-radius: 3px;*/}
+.input-live-search {border: medium none;color: #838383;margin: 0 0 0 10px;vertical-align: middle;width: 150px;height:15px;border:1px solid #BCBBBB;box-shadow:0 1px 2px rgba(0, 0, 0, 0.1) inset;padding: 4px 4px 4px 6px;/*border-radius: 3px;*/}
 #search_mini_form table, #search_mini_form td, #search_mini_form th{vertical-align:middle}
 /* Header Mind Cart */
 .header .mini-cart{height:65px;width:114px;float:right;background:url(../images/sprite.gif) no-repeat 0 -135px;position:relative;margin:8px  11px 0 0;}
@@ -1922,11 +1922,11 @@ ul.level0:after,
 	background:url(../images/right-bg.jpg) no-repeat right center;
     font-family: Verdana,helvetica,sans-serif;
 	height:45px; 
-	width:16%; 
+	/*width:16%; */
 	line-height:45px;
     position: absolute; right: 0; bottom: 0;
 }
-.right-top-nav ul{background:url(../images/c-bg.jpg) repeat-x;margin-right:5px;height:45px; overflow:hidden;}
+.right-top-nav ul{background:url(../images/c-bg.jpg) repeat-x;/*margin-right:5px;*/height:45px; overflow:hidden;}
 .right-top-nav ul li.right-top{height:45px;line-height:45px;}
 /* glider */
 .top-banners{height:180px;margin-bottom:8px;}

@@ -84,8 +84,8 @@ $identifier = Mage::getSingleton('cms/page')->getIdentifier();
 	<?php  if ($routeName == 'cms' && ($identifier == 'home' || $identifier='mintaihome')){?>
 		<div class="latest-wrapper">
 		<?php
-		$category_id=$identifier=='home'?18:51;
-		$c2=$identifier=='home'?5:25;
+		$category_id=$identifier=='home'?62:51;
+		$c2=$identifier=='home'?63:25;
 	echo $this->getLayout()->createBlock('catalog/product_list')->setTemplate('catalog/product/listhome2.phtml')->setCategoryId($category_id)->setTitle($this->__('The latest product'))->setSubTitle($this->__('Supply expert fire system'))->toHtml();?>
 
 		</div>

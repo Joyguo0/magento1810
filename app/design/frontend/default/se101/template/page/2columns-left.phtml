@@ -57,7 +57,14 @@ $identifier = Mage::getSingleton('cms/page')->getIdentifier();
        	 	width:2000,
         	height:5000,
         	navigation: true,
-            auto:true
+            play: {
+              active: true,
+              auto: true,
+              interval: 4000,
+              swap: true,
+              restartDelay: 2500
+            }
+  
      		});
    	 });
 // ]]></script>

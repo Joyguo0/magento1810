@@ -7,7 +7,7 @@
 .about .aboutL ul li img{width:230px;height:230px}
 .about h2,.reco_wrap h2{background-image:url("../images/title1.png"); background-position: 0 2px; font-size:1.5em; margin-bottom:10px; height:40px; text-align:left;padding-left:45px; font-weight: normal;}
 .about h2 span{line-height:40px;width:auto;padding-right:10px}
-.about h2 span.subtitle{float:none;color:#000;padding-top:0; padding-left:30px}
+.about h2 span.subtitle{float:none;color:#000;padding-top:0; padding-left:30px;font-weight: normal;}
 .about h2 a{color:#000}
 .followbox{margin:0;padding:0;text-align:left}
 .followbox h4{color:#fff; height:38px}
@@ -23,7 +23,8 @@
 #search-leftbox{background:none}
 #search-leftbox .block-title{height: 47px; background: url(../images/home-catebg.png) no-repeat; padding: 0; margin: 0;border:0;text-indent: -9999em}
 #search-leftbox li.level-top{background:none; padding:0}
-#search-leftbox li.level-top a{background:#c71412; line-height:30px; height:30px; margin:3px; font-size:14px}
+#search-leftbox li.level-top a{background:#c71412 url(../images/home-cate-li-bg.png) 2px center no-repeat; line-height:30px; height:30px; margin:3px; font-size:14px}
+#search-leftbox li.expand a.level-top{background-position: 2px center}
 #search-leftbox .level0 li{padding:0}
 #search-leftbox .level0 li a{background:none}
 #search-leftbox ul.level0{}

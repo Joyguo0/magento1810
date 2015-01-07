@@ -40,6 +40,8 @@
 .latest-wrapper .about{width:auto;max-width:958px}
 .latest-index{color:#fff; font-size:2.5em;line-height:1.2em;text-indent:8px}
 .reco_wrap ul li .productImg img,.reco_wrap ul li .productImg{width:227px; height:227px}
+.main #search_mini_form{display: block; background: #fff url(../images/home-search-bg.jpg) no-repeat; padding-top: 59px}
+	.main #search_mini_form table{margin: 0; width: 100%}
 
 #yq_Call{display: none;}
 .footer p{margin-bottom: 0}

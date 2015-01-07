@@ -44,24 +44,33 @@ foreach($children as $c){
 ?>
 <form id="search_mini_form" action="<?php echo $this->helper('catalogSearch')->getResultUrl() ?>" method="get">
 	<fieldset>
-	   <table height="33" cellspacing="0" cellpadding="0" border="0" width="472">
+	   <table cellspacing="0" cellpadding="0" border="0" width="100%">
 	        <tbody>
 		  <tr>
 
-		    <td id="nav-search-field" align="left" width="260"> <input id="search" type="text" class="input-live-search" name="<?php echo $this->helper('catalogSearch')->getQueryParamName() ?>" value="<?php echo $this->helper('catalogSearch')->getEscapedQueryText() ?>" /></td>
+		    <td class="a-center" id="nav-search-field" align="center" width="260"> <label><?php echo $this->__('Product Name')?></label><input id="search" type="text" class="input-live-search" name="<?php echo $this->helper('catalogSearch')->getQueryParamName() ?>" value="<?php echo $this->helper('catalogSearch')->getEscapedQueryText() ?>" /></td>
+		   <?php
+		   /*
 		   <td class="category_search_select" width="90">
 		    <select name="cat" id="cat" >
 			<option value=""><?php echo $this->__('All Categories') ?></option>
 			<?= $extra_options ?>
 		    </select>
 		    </td>
-		   
+		   */
+		   ?>
+		</tr>
+		<tr>
 		   <td align="center" width="45" style="text-align:center">
-		      <input type="image" style="margin-top:1px;" src="<?php echo $this->getSkinUrl('images/nav_searchbar_submit.gif') ?>" alt="search" />
+		      <input type="image" style="margin-top:1px;" src="<?php echo $this->getSkinUrl('images/home-search1.jpg') ?>" alt="search" />
 		   </td>
+		   <?php
+		   /*
 		    <td align="center" width:="77">
 			<a href="<?php echo $this->getUrl('catalogsearch/advanced') ?>"><?php echo $this->__('Advanced') ?></a>
 		   </td>
+		   */
+		   ?>
 			<div id="search_autocomplete" class="search-autocomplete"></div>
 			<script type="text/javascript">
 			//<![CDATA[

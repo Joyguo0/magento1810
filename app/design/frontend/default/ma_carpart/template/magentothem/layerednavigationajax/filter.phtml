@@ -1,0 +1,172 @@
+<?php
+/*
+ * @author danhtung
+ * @version 1.1.0
+ * 
+ */
+?>
+<?php
+    $baseUrl = Mage::helper('layerednavigationajax/data')->getBaseUrlFilter();
+    $params = trim(Mage::helper('layerednavigationajax/data')->prepareParams($this->getRequest()->getParams()));
+    $currencies = Mage::app()->getLocale()->currency(Mage::app()->getStore()->getCurrentCurrencyCode())->getSymbol();
+    $toolBarStatus = Mage::getStoreConfig('layerednavigationajax/layerfiler_config/toolbar_status');
+    $sliderStatus = Mage::getStoreConfig('layerednavigationajax/layerfiler_config/slider_status');
+?>
+<?php
+if ($sliderStatus == 1) {
+    ?>
+    <p>
+        <input type="text" disabled ="disabled" id="amount" style="border: 0; color: #f6931f; font-weight: bold;background: none" />
+    </p>
+    <div id="slider-range"></div>
+    <div id ="search" style ="margin:10px 10px 0px 10px;">
+        <input type ="text" name ="first_price" style="width:40px"/>
+        --
+        <input type ="text" name ="last_price" style="width:40px"/>
+        <input type ="button" name ="search_price" id ="search_price" value ="Search"/>
+    </div>
+<?php } else { ?>
+    <ol>
+            <?php foreach ($this->getItems() as $_item): ?>
+                <li>
+                    <?php if ($_item->getCount() > 0): ?>
+                        <?php
+                        $url = $_item->getUrl();
+                        $onclick = "ajaxFilter('" . $url . "')";
+                        echo '<a class="ajaxLayer"  onclick = "' . $onclick . '" >' . $_item->getLabel() . '</a>';
+                        ?> 
+                    <?php else: echo $_item->getLabel() ?>
+                    <?php endif; ?>
+                        (<?php echo $_item->getCount() ?>)
+                </li>
+            <?php endforeach ?>
+        </ol>
+
+
+<?php } ?>
+<div id ="wrapper">
+    <div id="loading" style ="position: fixed;top: 50%;left: 50%;margin-top: -50px;"></div>
+</div>
+
+<script type ="text/javascript">
+    $jq(function() {
+        
+        var currencies = "<?php echo $currencies; ?>";
+        var toolbar_status = "<?php echo $toolBarStatus; ?>";
+        var min = "<?php echo $this->getMinRangePrice(); ?>"
+            min = Number(min);
+        var max = "<?php echo $this->getMaxRangePrice(); ?>"
+            max = Number(max);
+        var currentMinPrice = "<?php echo $this->_currMinPrice; ?>"
+            currentMinPrice = Number(currentMinPrice);
+        var currentMaxPrice = "<?php echo $this->_currMaxPrice; ?>"
+        //alert('min: '+min+'--max: '+ max+ 'currentMin: '+currentMinPrice);
+        currentMaxPrice = Number(currentMaxPrice);
+        var params = "<?php echo trim($params); ?>";
+        params = $jq.trim(params);
+        //slider
+        $jq( "#slider-range" ).slider({
+            range: true,
+            min: min,
+            max: max,
+            values: [ currentMinPrice, currentMaxPrice ],
+            slide: function( event, ui ) {
+                $jq( "#amount" ).val( currencies + ui.values[ 0 ] + " - "+ currencies + ui.values[ 1 ] );
+                $jq('input[name="first_price"]').val(ui.values[0]);
+                $jq('input[name="last_price"]').val(ui.values[1]);
+            },
+            stop: function( event, ui ) {
+                var first =   ui.values[0];
+                var  last =  ui.values[1];
+                 var baseUrl = '<?php echo $baseUrl; ?>'+'?first='+first+'&last='+last+params;
+                     ajaxFilter(baseUrl);
+                
+            }
+        });
+
+        $jq( "#amount" ).val( currencies + $jq( "#slider-range" ).slider( "values", 0 ) +
+            " - "+currencies + $jq( "#slider-range" ).slider( "values", 1 ) );
+        $jq('input[name="first_price"]').val($jq( "#slider-range" ).slider( "values", 0 ));
+        $jq('input[name="last_price"]').val($jq( "#slider-range" ).slider( "values", 1 ));   
+         
+        if(toolbar_status==1){    
+            //view mode product   
+            $jq('.view-mode a').each(function(){
+                var viewModeUrl = $jq(this).attr('href');
+                $jq( this ).attr('link',viewModeUrl);
+                $jq(this).attr('href','javascript:void(0)');
+                $jq(this).live('click',function(){
+                    $jq(this).attr('onclick',ajaxFilter(viewModeUrl));
+                    return false;
+                });
+            });
+
+            //sort by
+            
+            $jq('.sort-by select').removeAttr('onchange');
+            $jq('.sort-by select').change(function(){
+                  var sortByUrl = $jq(this).children(":selected").attr('value');
+                   ajaxFilter(sortByUrl)
+            });
+
+            //demention sort by
+
+            $jq('.sort-by a').each(function(){
+                var dementionUrl = $jq(this).attr('href');
+                $jq( this ).attr('link',dementionUrl);
+                $jq(this).attr('href','javascript:void(0)');
+                $jq(this).live('click',function(){
+                    $jq(this).attr('onclick',ajaxFilter(dementionUrl));
+                    return false;
+                });
+            });
+            
+            //show per page
+            
+            $jq('.limiter select').removeAttr('onchange');
+            $jq('.limiter select').change(function(){
+                var perPageUrl = $jq(this).children(":selected").attr('value');
+                ajaxFilter(perPageUrl)
+            });  
+            
+            //pagination page
+            $jq('.pages a').each(function(){
+                var href = $jq(this).attr('href');
+                $jq( this ).attr('link',href);
+                $jq(this).attr('href','javascript:void(0)');
+                $jq(this).live('click',function(){
+                    $jq(this).attr('onclick',ajaxFilter(href));
+                    return false;
+                });
+            });
+        }
+         
+        //search price from input box
+        $jq('#search_price').each(function(){
+            $jq(this).live('click',function(){
+                var first_price = $jq('input[name="first_price"]').val();
+                var last_price = $jq('input[name="last_price"]').val();
+                var urlFilter = '<?php echo $baseUrl; ?>'+'?first='+first_price+'&'+'last='+last_price+params;
+                ajaxFilter(urlFilter);
+                return false;
+            })
+        });
+        
+        $jq('.tags-list a').each(function(){
+            var TagUrl = $jq(this).attr('href');
+            $jq( this ).attr('link',TagUrl);
+            $jq(this).attr('href','javascript:void(0)');
+            $jq(this).live('click',function(){
+                $jq(this).attr('onclick',ajaxFilter(TagUrl));
+                return false;
+            });
+            $jq('.button.btn-cart').attr('data-original-title',$jq('button.btn-cart').attr('title'));
+            $jq('.link-wishlist').attr('data-original-title',$jq('.link-wishlist').attr('title'));
+            $jq('.link-compare').attr('data-original-title',$jq('.link-compare').attr('title'));
+            $jq('button.btn-cart, .link-wishlist, .link-compare').attr('rel', 'tooltip');
+            $jq("[rel=tooltip]").tooltip();
+
+        });
+         
+    });
+</script>

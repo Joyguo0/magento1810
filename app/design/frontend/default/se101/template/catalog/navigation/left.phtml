@@ -1,0 +1,44 @@
+<?php $_menu = $this->renderCategoriesMenuHtml(0,'level-top') ?>
+<?php if($_menu): ?>
+<div id="search-leftbox">
+    <div class="block-title">
+        <strong><span><?php echo $this->__('All Categories:'); ?></span></strong>
+    </div>
+    <ul id="search-left">
+        <?php echo $_menu ?>
+    </ul>
+</div>
+<script type="text/javascript">
+jQuery(function($){    
+    $("#search-left > li.nav-1, #search-left > li.nav-2").addClass('expand');
+    $("#search-left > li.nav-1 > .level0, #search-left > li.nav-2 > .level0").slideDown();
+    
+    $("#search-left a.level-top").click(function() {
+    	if( !( $(this).next().hasClass('level0')) ) {
+			return true ; 	
+    	}
+        $(this).parent().toggleClass('expand');
+        
+        if ( $(this).parent().hasClass('expand') ) {
+            $(this).next('.level0').slideDown();
+        } else {
+            $(this).next('.level0').slideUp();
+        }
+        return false;
+    });
+    
+    $("#search-left .level0 li").click(function() {
+        var className = $(this).parent().parent().attr('class');
+        var patt = /nav-\d+/;
+        var className = className.match(patt);
+        Mage.Cookies.set('showLeft', className);
+    });
+    
+    var showLeft = Mage.Cookies.get('showLeft');
+    if (showLeft) {
+        $("#search-left > li" + "." + showLeft).addClass('expand');
+        $("#search-left > li" + "." + showLeft + " > .level0").slideDown();
+    }
+});
+</script>
+<?php endif ?>

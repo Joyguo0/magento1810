@@ -1,0 +1,77 @@
+<?php 
+    $loadingImage = Mage::getBaseUrl('media').'theme/' . Mage::getStoreConfig('layerednavigationajax/layerfiler_config/loading_image');
+    $transParent = Mage::getBaseUrl('media').'theme/' . Mage::getStoreConfig('layerednavigationajax/layerfiler_config/trans_image');
+    $opacity =    Mage::getStoreConfig('layerednavigationajax/layerfiler_config/bg_opacity');
+?>
+<script type="text/javascript">
+    function ajaxFilter(url) {
+        var data = "";
+        jQuery(function($jq) {
+            $jq.ajax({
+                url: url,
+                dataType: 'json',
+                type: 'post',
+                data: data,
+                beforeSend: function ( xhr ) {
+                    var loading = '<img src ="<?php echo $loadingImage;?>"/>';
+                    var urlImage = '<?php echo $transParent; ?>';
+                    var opacity = "<?php echo $opacity; ?>";
+                    $jq('#loading').html(loading);
+                    $jq('#wrapper').attr('style','position: fixed;top: 0%; z-index:999999; left: 0%; opacity:'+opacity+'; width:100%;height: 100%; background:url('+urlImage+')');
+                },
+                success: function(data) {
+                    var flag = true;
+                    if(data.status==1) {
+                        //alert(dat)
+                        if (data.productlist) {
+                            $jq('.category-products').empty();
+                            $jq('.category-products').append(data.productlist);
+                            if(data.pcount==0) {
+                                flag = false;
+                            }
+                            //$jq('#loading').html('');
+                        }
+                        if(flag==true) {
+                            if (data.leftLayer) {
+                                 if(url.search('tag/product/list')!=-1){
+                                    if ($jq('.block-tags')) {
+                                        $jq('.block-tags').empty();
+                                        $jq('.block-tags').append(data.leftLayer)
+                                        $jq('.block-tags').append('<div class= "add_js_tagproduct"></div>');
+                                        $jq('.add_js_tagproduct').append(data.tagtoolbarjs);
+
+                                    }
+                                } else {
+                                    if ($jq('.block-layered-nav')) {
+                                        $jq('.block-layered-nav').empty();
+                                        $jq('.block-layered-nav').append(data.leftLayer)
+                                        $jq('.block-layered-nav').append('<div class= "add_js_remove_item"></div>');
+                                        $jq('.add_js_remove_item').append(data.removeItem);
+
+                                    }
+                                }
+                            }
+                        }
+
+                        $jq('#loading').html('');
+                        
+                        $jq('#wrapper').removeAttr('style');
+                    }else {
+                        alert('Load data was failed');
+                    }
+
+                }
+            })
+            return false;
+        });
+        
+    }
+
+   
+</script>
+
+<style type ="text/css">
+    .ajaxLayer{
+        cursor: pointer;
+    }
+</style>

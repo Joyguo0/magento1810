@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<ma_carpart>
+    <blocks>
+        <block>
+            <title>Static Sub Menu Col Right</title>
+            <identifier>pt_menu_idcat_6_right</identifier>
+            <content>
+                    <![CDATA[
+						<div class="sub-menu-col4"><a href="#"><img src="{{media url="wysiwyg/tribune_02.jpg"}}" alt="" /> </a></div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+        <block>
+            <title>Custom Menu</title>
+            <identifier>pt_item_menu_custom_menu</identifier>
+            <content>
+                      <![CDATA[
+                            <div class="static_block_custom_menu">
+<div class="static-menu-img"><a href="#"><img src="{{media url="wysiwyg/car-mirror.png"}}" alt="" /></a></div>
+<div class="custom-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio sapien, tempor eget facilisis eget, dapibus vitae mi. Mauris auctor ultricies eros sit amet bibendum. Etiam dapibus erat sit amet nunc tincidunt ullamcorper. Integer quis tellus ut lorem imperdiet luctus sit amet nec felis. Sed in ipsum dolor, at dignissim sem. Fusce vestibulum, enim nec egestas dapibus, massa nulla convallis diam, id sodales tortor turpis nec ligula. Nunc bibendum enim id est malesuada sollicitudin.</div>
+</div>
+                        ]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+        <block>
+            <title>Banner static product</title>
+            <identifier>banner-static-product</identifier>
+            <content>
+                      <![CDATA[
+						<div class="banner-static">
+<div class="container">
+<div class="row-fluid">
+<div class="banner-box1 span6"><a href="#"><img src="{{media url="wysiwyg/banner1.jpg"}}" alt="" /></a></div>
+<div class="banner-box2 span6"><a href="#"><img src="{{media url="wysiwyg/banner2.jpg"}}" alt="" /> </a></div>
+</div>
+</div>
+</div>
+					  ]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+        <block>
+            <title>Footer social</title>
+            <identifier>footer-social</identifier>
+            <content>
+                      <![CDATA[<div class="footer-social">
+<ul>
+<li class="first"><a href="#"> <img src="{{media url="wysiwyg/icon-f.png"}}" alt="" /></a></li>
+<li><a href="#"> <img src="{{media url="wysiwyg/icon-t.png"}}" alt="" /></a></li>
+<li><a href="#"> <img src="{{media url="wysiwyg/icon-g.png"}}" alt="" /></a></li>
+<li class="last"><a href="#"><img src="{{media url="wysiwyg/icon-p.png"}}" alt="" /></a></li>
+</ul>
+</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+
+        <block>
+            <title>Footer static bottom</title>
+            <identifier>footer-static-bottom</identifier>
+            <content>
+                      <![CDATA[<div class="ma-footer-static-bottom">
+<div class="row-fluid">
+<div class="f-col5 span3">
+<div class="footer-static-title">
+<h3>information</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="{{store direct_url="about-magento-demo-store"}}">about us</a></li>
+<li><a href="{{store direct_url="#"}}">delivery information</a></li>
+<li><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">privacy policy</a></li>
+<li class="last"><a href="{{store direct_url="#"}}">terms &amp; condition</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col6 span3">
+<div class="footer-static-title">
+<h3>our support</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="{{store direct_url="#"}}">delivery information</a></li>
+<li><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">privacy policy</a></li>
+<li><a href="{{store direct_url="catalogsearch/term/popular/"}}">term &amp; condition</a></li>
+<li class="last"><a href="{{store direct_url="contacts/"}}">contact us</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col7 span3">
+<div class="footer-static-title">
+<h3>our service</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="{{store direct_url="#"}}">my account</a></li>
+<li><a href="{{store direct_url="#"}}">order history</a></li>
+<li><a href="{{store direct_url="sales/guest/form/"}}">returns</a></li>
+<li class="last"><a href="{{store url="catalog/seo_sitemap/category/"}}">site map</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col8 span3">
+<div class="footer-static-title">
+<h3>my account</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="{{store direct_url="#"}}">my account</a></li>
+<li><a href="{{store direct_url="#"}}">order history</a></li>
+<li><a href="{{store direct_url="#"}}">wish list</a></li>
+<li class="last"><a href="{{store direct_url="#"}}">newsletter</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+
+
+
+        <block>
+            <title>Footer static middle</title>
+            <identifier>footer-static-middle</identifier>
+            <content>
+                   <![CDATA[
+                   <div class="ma-footer-static-middle">
+<div class="row-fluid">
+<div class="newsetletter span4">
+<div class="footer-static-title">
+<h3>newsetletter</h3>
+</div>
+<div class="footer-static-content">{{block type="newsletter/subscribe" name="footer.newsletter" template="newsletter/subscribe.phtml"}}</div>
+</div>
+<div class="payment span4">
+<div class="footer-static-title">
+<h3>payment option</h3>
+</div>
+<div class="payment-content">
+<ul>
+<li><a href="#"><img src="{{media url="wysiwyg/payment-1.png"}}" alt="" /></a></li>
+<li><a href="#"><img src="{{media url="wysiwyg/payment-2.png"}}" alt="" /></a></li>
+<li><a href="#"><img src="{{media url="wysiwyg/payment-3.png"}}" alt="" /></a></li>
+<li><a href="#"><img src="{{media url="wysiwyg/payment-4.png"}}" alt="" /></a></li>
+<li><a href="#"><img src="{{media url="wysiwyg/payment-5.png"}}" alt="" /></a></li>
+</ul>
+</div>
+</div>
+<div class="shipping span4">
+<div class="footer-static-title">
+<h3>free shipping</h3>
+</div>
+<div class="shipping-content">
+<div class="block-icon">&nbsp;</div>
+<div class="content">
+<p class="text"><strong>Monday to Tuesday:</strong> 10:00am-7:00pm</p>
+<p class="text">On order over<strong>$99:00</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+
+        <block>
+            <title>Footer static top</title>
+            <identifier>footer-static-top</identifier>
+            <content>
+                 <![CDATA[
+                   <div class="ma-footer-static-top">
+<div class="row-fluid">
+<div class="f-col1 span3 first">
+<div class="footer-static-title">
+<h3>About us</h3>
+</div>
+<div class="footer-static-content">
+<div class="img"><img src="{{media url="wysiwyg/logo.png"}}" alt="" /></div>
+<div class="content">
+<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+<p class="text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gally of type and scrambled it to make a type specimen book.</p>
+</div>
+</div>
+</div>
+<div class="f-col2 span3">
+<div class="footer-static-title">
+<h3>Facebook</h3>
+</div>
+<div class="footer-static-content">
+<div class="likebox-block">
+<div class="likebox-content">{{block type="likebox/likebox" name="footer.likebox" template="magentothem/likebox/likebox.phtml"}}</div>
+</div>
+</div>
+</div>
+<div class="f-col3 span3 ">
+<div class="footer-static-title">
+<h3>Twitter Feeds</h3>
+</div>
+<div class="footer-static-content">{{block type="core/template" name="lastesttweet" template="magentothem/lastesttweet/lastesttweet.phtml" }}</div>
+</div>
+<div class="f-col4 span3 last">
+<div class="footer-static-title">
+<h3>contact us</h3>
+</div>
+<div class="footer-static-content">
+<ul id="contact-us">
+<li class="first"><img src="{{media url="wysiwyg/icon-cell.png"}}" alt="" />
+<p class="text"><span>contact phone:</span> <span> 321321321, 321321321</span></p>
+</li>
+<li class="cell-phone"><img src="{{media url="wysiwyg/icon-mobile.png"}}" alt="" />
+<p class="text"><span>cell phone:</span> <span>123123123, 123123123</span></p>
+</li>
+<li class="mail"><img src="{{media url="wysiwyg/icon-mail.png"}}" alt="" />
+<p class="text"><span>e-mail address:</span> <span> sale@mydomail.com, info@mydomain.com</span></p>
+</li>
+<li class="last"><img src="{{media url="wysiwyg/icon-skype.png"}}" alt="" />
+<p class="text"><span>skype :</span> <span> CartPart.test, CarPart.sky</span></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+
+
+
+        <block>
+            <title>Footer static</title>
+            <identifier>footer-static</identifier>
+            <content>
+                 <![CDATA[<div class="ma-footer-static-container">
+<div class="container">
+<div class="ma-footer-static-inner">
+<div class="ma-footer-static-top">
+<div class="row-fluid">
+<div class="f-col1 span3 first">
+<div class="footer-static-title">
+<h3>About us</h3>
+</div>
+<div class="footer-static-content">
+<div class="img"><img src="{{media url="wysiwyg/logo.png"}}" alt="" /></div>
+<div class="content">
+<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+<p class="text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gally of type and scrambled it to make a type specimen book.</p>
+</div>
+</div>
+</div>
+<div class="f-col2 span3">
+<div class="footer-static-title">
+<h3>Facebook</h3>
+</div>
+<div class="footer-static-content">
+<div class="likebox-block">
+<div class="likebox-content">{{block type="likebox/likebox" name="footer.likebox" template="magentothem/likebox/likebox.phtml"}}</div>
+</div>
+</div>
+</div>
+<div class="f-col3 span3 ">
+<div class="footer-static-title">
+<h3>Twitter Feeds</h3>
+</div>
+<div class="footer-static-content">{{block type="lastesttweet/lastesttweet" name="lastesttweet" template="magentothem/lastesttweet/lastesttweet.phtml" }}</div>
+</div>
+<div class="f-col4 span3 last">
+<div class="footer-static-title">
+<h3>contact us</h3>
+</div>
+<div class="footer-static-content">
+<div class="block-phone">
+<div class="block-icon">&nbsp;</div>
+<div class="block-content"><span> <span>contact phone:</span> <span>321321321, 321321321</span> </span></div>
+</div>
+<div class="cell-phone">
+<div class="block-icon">&nbsp;</div>
+<div class="block-content"><span> <span>cell phone:</span> <span>123123123, 123123123</span> </span></div>
+</div>
+<div class="email">
+<div class="block-icon">&nbsp;</div>
+<div class="block-content"><span> <span>email addresses:</span> <span>sale@mydomain.com, info@mydomain.com</span> </span></div>
+</div>
+<div class="skype">
+<div class="block-icon">&nbsp;</div>
+<div class="block-content"><span> <span>skype:</span> <span> cartpart.test, carpart.sky </span> </span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-footer-static-middle">
+<div class="row-fluid">
+<div class="newsetletter span4">
+<div class="footer-static-title">
+<h3>newsetletter</h3>
+</div>
+<div class="footer-static-content">{{block type="newsletter/subscribe" name="footer.newsletter" template="newsletter/subscribe.phtml"}}</div>
+</div>
+<div class="payment span4">
+<div class="footer-static-title">
+<h3>payment option</h3>
+</div>
+<div class="payment-content">
+<ul>
+<li><a href="{{store direct_url="contacts"}}"><img src="{{media url="wysiwyg/payment-1.png"}}" alt="" /></a></li>
+<li><a href="{{store direct_url="contacts"}}"><img src="{{media url="wysiwyg/payment-2.png"}}" alt="" /></a></li>
+<li><a href="{{store direct_url="contacts"}}"><img src="{{media url="wysiwyg/payment-3.png"}}" alt="" /></a></li>
+<li><a href="{{store direct_url="contacts"}}"><img src="{{media url="wysiwyg/payment-4.png"}}" alt="" /></a></li>
+<li><a href="{{store direct_url="contacts"}}"><img src="{{media url="wysiwyg/payment-5.png"}}" alt="" /></a></li>
+</ul>
+</div>
+</div>
+<div class="shipping span4">
+<div class="footer-static-title">
+<h3>free shipping</h3>
+</div>
+<div class="shipping-content">
+<div class="block-icon">&nbsp;</div>
+<div class="content">
+<p class="text"><strong>Monday to Tuesday:</strong> 10:00am-7:00pm</p>
+<p class="text">On order over<strong>$99:00</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-footer-static-bottom">
+<div class="row-fluid">
+<div class="f-col5 span3">
+<div class="footer-static-title">
+<h3>information</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="{{store direct_url="contacts"}}">about us</a></li>
+<li><a href="{{store direct_url="contacts"}}">delivery information</a></li>
+<li><a href="{{store direct_url="contacts"}}">privacy policy</a></li>
+<li class="last"><a href="{{store direct_url="contacts"}}">terms &amp; condition</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col6 span3">
+<div class="footer-static-title">
+<h3>information</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="{{store direct_url="contacts"}}">about us</a></li>
+<li><a href="{{store direct_url="contacts"}}">delivery information</a></li>
+<li><a href="{{store direct_url="contacts"}}">privacy policy</a></li>
+<li class="last"><a href="{{store direct_url="contacts"}}">terms &amp; condition</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col7 span3">
+<div class="footer-static-title">
+<h3>information</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="{{store direct_url="contacts"}}">about us</a></li>
+<li><a href="{{store direct_url="contacts"}}">delivery information</a></li>
+<li><a href="{{store direct_url="contacts"}}">privacy policy</a></li>
+<li class="last"><a href="{{store direct_url="contacts"}}">terms &amp; condition</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col8 span3">
+<div class="footer-static-title">
+<h3>information</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="{{store direct_url="contacts"}}">about us</a></li>
+<li><a href="{{store direct_url="contacts"}}">delivery information</a></li>
+<li><a href="{{store direct_url="contacts"}}">privacy policy</a></li>
+<li class="last"><a href="{{store direct_url="contacts"}}">terms &amp; condition</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+    </blocks>
+
+</ma_carpart>
+

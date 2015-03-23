@@ -1,0 +1,46 @@
+
+<div class="top-cart-contain">
+    <?php $_cartQty = $this->getSummaryCount() ?>
+    
+    <span class="top-cart-title">
+    <?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?>
+    -
+    <?php
+            
+                $count = $this->helper('checkout/cart')->getSummaryCount();
+                if( $count == 1 )
+                {
+                    echo $text = $this->__('%s item', $count);
+                }
+                elseif( $count > 0 )
+                {
+                echo $text = $this->__('%s item(s)', $count);
+                }
+                else
+                {
+                    echo $text = $this->__('0 item(s)');
+                }
+             ?>
+    <span class="btn-c"></span>
+    </span>
+    <div class="top-cart-content">
+        <?php $_items = $this->getRecentItems() ?>
+        <?php if(count($_items)): ?>
+            <ol id="cart-sidebar" class="mini-products-list">
+            <?php foreach($_items as $_item): ?>
+                <?php echo $this->getItemHtml($_item) ?>
+            <?php endforeach; ?>
+            </ol>
+            <script type="text/javascript">decorateList('cart-sidebar', 'none-recursive')</script>
+        <?php else: ?>
+            <p class="empty"><?php echo $this->__('You have no items in your shopping cart.') ?></p>
+        <?php endif ?>
+        <?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
+        <div class="actions">
+            <?php echo $this->getChildHtml('extra_actions') ?>
+            <button type="button" title="<?php echo $this->__('Checkout') ?>" class="button" onclick="setLocation('<?php echo $this->getCheckoutUrl() ?>')"><span><span><?php echo $this->__('Checkout') ?></span></span></button>
+        </div>
+        <?php endif ?>
+    </div>
+    <span class="top-cart-icon"></span>
+</div>

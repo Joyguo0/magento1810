@@ -1,0 +1,46 @@
+
+.quick-access {float: right !important}
+.page-title h1  {font-family: HelveticaCondensedBold, Helvetica, sans-serif}
+
+input,button,select,textarea {
+  font-family: inherit;
+}
+/*  Top links =============================================================================== */
+.links {float: none; }
+.links li   {padding: 0 0 0 0 }
+/*=============================================================================== */
+
+/* New product =============================================================================== */
+
+.products-grid .product-name {font-size: 14px;}
+.add-to-links li    {float: none; }
+.add-to-links   {margin-top: 15px ; text-align: center}
+
+.link-compare   {float: none; padding-top: 2px}
+.link-wishlist  {float: none}
+.add-to-links .separator    {display: none}
+/*============================================================================================ */
+
+/* Special product =============================================================================== */
+
+/*============================================================================================ */
+
+/* Footer-static-top ======================================================================*/
+.ma-likebox iframe  {width:210px !important}
+.ma-likebox  ._4ki li{display: inline-block }
+.twitted ul#twitter_update_list li  {width: 225px}
+.twitted ul#twitter_update_list li span {width: 190px}
+#contact-us {float: right}
+.f-col4  .footer-static-title   {padding-left: 59px}
+/* =============================================================================== */
+.product-essential .product-shop .add-to-links .link-compare {float: none; margin-left: 0}
+.cart .crosssell .add-to-links {float: left}
+.products-list .add-to-links {margin: -41px 0 0 0 }
+.products-list .add-to-links .separator {display: none}
+.pager .limiter {margin-right: 15px}
+.shipping-content .block-icon {display: none !important}
+.shipping-content .content {margin-left: 22px}
+.ma-footer-static-middle {padding-bottom: 0}
+.product-options dl dt {clear: both}
+.ma-thumbnail-container .flex-viewport {margin-right: 34px !important}
+.email-friend {clear: both}

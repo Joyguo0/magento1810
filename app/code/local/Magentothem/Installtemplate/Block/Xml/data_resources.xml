@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ma_carpart>
+    <resources>
+        <resource>
+            <title>Carpart page</title>
+            <identifier>carpart_home</identifier>
+            <root_template>one_column</root_template>
+            <content>
+			<![CDATA[<div class="new-product">{{block type="newproduct/newproduct" name="newproduct" template="magentothem/newproduct/newproduct.phtml"}}</div>
+<div class="special-product">
+<div class="special-product-title">
+<h2>Special products</h2>
+<p class="text">"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</p>
+</div>
+<div class="product-block-content row-fluid">
+<div class="block-left span6">
+<div class="block-title"><span>Car Tire</span></div>
+<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+<div class="block-img"><img src="{{media url="wysiwyg/car-tire.png"}}" alt="" /></div>
+{{block type="featuredproduct/featuredproduct" name="featuredproduct" template="magentothem/featuredproduct/featuredproduct.phtml" }}</div>
+<div class="block-right span6">
+<div class="block-title"><span>Car Mirror</span></div>
+<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+<div class="block-img"><img src="{{media url="wysiwyg/car-mirror.png"}}" alt="" /></div>
+{{block type="onsaleproduct/onsaleproduct" name="onsaleproduct" template="magentothem/onsaleproduct/onsaleproduct.phtml"}}</div>
+</div>
+</div>]]>
+			</content>
+            <sort_order>0</sort_order>
+            <is_active>1</is_active>
+        </resource>
+    </resources>
+</ma_carpart>

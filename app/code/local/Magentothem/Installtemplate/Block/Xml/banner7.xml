@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>  
+<banner7>
+<records>
+	<record>
+		  <banner7_id>3</banner7_id>
+		  <title></title>
+		  <link></link>
+		  <image><![CDATA[<img src="yoururl/magentothem/banner7/slide1.jpg" height="80px" alt="" />]]></image>
+		  <order>1</order>
+		  <store_id>0</store_id>
+		  <description></description>
+		  <status>1</status>
+		  <created_time>2013-06-07 07:39:26</created_time>
+		  <update_time>2013-06-07 07:39:26</update_time>
+	</record>
+	<record>
+		  <banner7_id>4</banner7_id>
+		  <title></title>
+		  <link></link>
+		  <image><![CDATA[<img src="yoururl/magentothem/banner7/slide2.jpg" height="80px" alt="" />]]></image>
+		  <order>2</order>
+		  <store_id>0</store_id>
+		  <description></description>
+		  <status>1</status>
+		  <created_time>2013-06-07 07:40:14</created_time>
+		  <update_time>2013-06-07 07:40:14</update_time>
+	</record>
+	<record>
+		  <banner7_id>6</banner7_id>
+		  <title></title>
+		  <link></link>
+		  <image><![CDATA[<img src="yoururl/magentothem/banner7/slide3.jpg" height="80px" alt="" />]]></image>
+		  <order>3</order>
+		  <store_id>0</store_id>
+		  <description></description>
+		  <status>1</status>
+		  <created_time>2013-06-07 07:42:35</created_time>
+		  <update_time>2013-06-07 07:42:35</update_time>
+	</record>
+
+
+</records>
+</banner7>

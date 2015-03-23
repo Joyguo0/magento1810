@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<magentothem translate="label" module="likebox">
+			<label>Magentothem</label>
+			<sort_order>205</sort_order>
+		</magentothem>
+	</tabs>
+	<sections>
+		<likebox translate="label" module="likebox">
+			<label>Facebook Like Box</label>
+			<tab>magentothem</tab>
+			<sort_order>168</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<likebox_config translate="label">
+					<label>Like Box Config</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enabled translate="label comment">
+							<label>Enabled:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>
+								adminhtml/system_config_source_yesno
+							</source_model>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enabled>
+						<lb_url>
+							<label>Facebook Page URL:</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</lb_url>
+                        <lb_width>
+                        	<label>Width:</label>
+                        	<frontend_type>text</frontend_type>
+                            <comment>The width of the plugin in pixels.</comment>
+                        	<sort_order>2</sort_order>
+                        	<show_in_default>1</show_in_default>
+                        	<show_in_website>1</show_in_website>
+                        	<show_in_store>1</show_in_store>
+                        </lb_width>
+                        <lb_height>
+                        	<label>Height:</label>
+                        	<frontend_type>text</frontend_type>
+                            <comment>The height of the plugin in pixels.</comment>
+                        	<sort_order>3</sort_order>
+                        	<show_in_default>1</show_in_default>
+                        	<show_in_website>1</show_in_website>
+                        	<show_in_store>1</show_in_store>
+                        </lb_height>
+
+						<lb_colorscheme>
+							<label>Color Scheme:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>
+								likebox/config_colorscheme
+							</source_model>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_store>1</show_in_store>
+							<show_in_website>1</show_in_website>
+						</lb_colorscheme>
+                        <lb_faces>
+                        	<label>Show Faces:</label>
+                        	<frontend_type>select</frontend_type>
+                        	<comment>Show profile photo in the plugin.</comment>
+                        	<source_model>
+                        		adminhtml/system_config_source_yesno
+                        	</source_model>
+                        	<sort_order>6</sort_order>
+                        	<show_in_default>1</show_in_default>
+                        	<show_in_website>1</show_in_website>
+                        	<show_in_store>1</show_in_store>
+                        </lb_faces>
+                        <lb_stream>
+                        	<label>Show Stream:</label>
+                        	<frontend_type>select</frontend_type>
+                        	<comment>Show the profile stream for public profile.</comment>
+                        	<source_model>
+                        		adminhtml/system_config_source_yesno
+                        	</source_model>
+                        	<sort_order>7</sort_order>
+                        	<show_in_default>1</show_in_default>
+                        	<show_in_website>1</show_in_website>
+                        	<show_in_store>1</show_in_store>
+                        </lb_stream>
+                        
+                        <lb_header>
+                        	<label>Show header:</label>
+                        	<frontend_type>select</frontend_type>
+                        	<comment>Show the Find Us on facebook bar at top. Only shown when either stream or connections are present.</comment>
+                        	<source_model>
+                        		adminhtml/system_config_source_yesno
+                        	</source_model>
+                        	<sort_order>8</sort_order>
+                        	<show_in_default>1</show_in_default>
+                        	<show_in_store>1</show_in_store>
+                        	<show_in_store>1</show_in_store>
+                        </lb_header>  
+                        <lb_border>
+                        	<label>Show border:</label>
+                        	<frontend_type>select</frontend_type>
+                        	<comment>Show border in the plugin.</comment>
+                        	<source_model>
+                        		adminhtml/system_config_source_yesno
+                        	</source_model>
+                        	<sort_order>9</sort_order>
+                        	<show_in_default>1</show_in_default>
+                        	<show_in_store>1</show_in_store>
+                        	<show_in_store>1</show_in_store>
+                        </lb_border>                     
+					</fields>
+				</likebox_config>						
+			</groups>
+		</likebox>
+	</sections>
+</config>
+
+

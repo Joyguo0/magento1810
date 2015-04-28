@@ -569,14 +569,14 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* Header ================================================================================ */
 .logo { float:left; }
-.ma-header-container {background: url("../images/bg-body.png") no-repeat scroll 42% 0 transparent}
+.ma-header-container {background: url("../images/header.png") no-repeat center 0;}
 .header { margin:0 auto; text-align: left; position:relative; z-index:10000; padding: 40px 0}
 .header a.logo { float:left; margin:25px 0 0 12px; text-decoration:none !important; }
 .header .logo img:hover { opacity: 1;}
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 .header h1.logo { margin:0; }
 .toplink { border-bottom:  1px solid #E93A3A; width: 100%; z-index: 99999 }
-.header .quick-access {text-align: right; }
+.header .quick-access {text-align: right; width: 57%;}
 .welcome-msg { margin:0; text-align: left; padding: 10px; color: white }
 .welcome-msg a { color:#ebbc58; }
 .header .form-search { float: right; height:29px; clear: both; margin-top: 15px }

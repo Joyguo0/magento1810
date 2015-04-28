@@ -576,13 +576,13 @@ tr.summary-details-excluded { font-style:italic; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 .header h1.logo { margin:0; }
 .toplink { border-bottom:  1px solid #E93A3A; width: 100%; z-index: 99999 }
-.header .quick-access {text-align: right; width: 57%;}
+.header .quick-access {text-align: right; width: 59%;}
 .welcome-msg { margin:0; text-align: left; padding: 10px; color: white }
 .welcome-msg a { color:#ebbc58; }
 .header .form-search { float: right; height:29px; clear: both; margin-top: 15px }
 .form-search .input-text {background: #000}
 .header .form-search label { float:left; width:0; height:29px; text-align:left; text-indent:-999em; overflow:hidden; }
-.header .form-search input.input-text { float:right; border: none; width:160px; height: 29px; color: white; font-size: 11px; padding-left: 10px }
+.header .form-search input.input-text { float:right; border: none; width:180px; height: 29px; color: white; font-size: 11px; padding-left: 10px }
 .header .form-search button.button { float: right; height: 33px; }
 .header .form-search button.button span { border:0; height:27px; padding:6px 10px 0; font:bold 11px/21px Tahoma, Verdana, Arial, sans-serif;background:#e93a3a; border-radius: 0}
 .header .form-search button.button:hover span {background: #969696}
@@ -892,7 +892,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* View Type: Grid */
 .products-grid { position:relative; }
 .products-grid.last { border-bottom:0; }
-.products-grid .item {  text-align: center; position: relative; background: #fff; padding-bottom: 15px}
+.products-grid .item {  text-align: center; position: relative; background: #fff; padding-bottom: 15px;  margin-left: 0;margin-right: 17px;margin-top:17px;}
 .products-grid .item-inner { padding: 10px }
 .products-grid .product-image {margin:0; display: block; }
 .products-grid .product-image img {  }
@@ -1944,7 +1944,7 @@ add-to-links li a:hover {color: #e93a3a}
 /* ======================================================================================= */
 
 /* Footer static middle ======================================================================================= */
-.ma-footer-static-middle    {background:url("../images/bg-middle.png") repeat; padding-bottom: 10px; border: 1px solid #2c2c2c; color: #ccc; margin-top: 20px}
+.ma-footer-static-bottom    {background:url("../images/bg-middle.png") repeat; padding-bottom: 10px; border: 1px solid #2c2c2c; color: #ccc; margin-top: 20px}
 .newsetletter   {}
 .payment    {padding-bottom: 10px; margin-bottom: 40px;}
 .payment-content    {padding: 0 0 0 30px;margin-top: 10px}
@@ -1956,7 +1956,7 @@ add-to-links li a:hover {color: #e93a3a}
 .shipping-content strong    {color: #e93a3a}
 
 /* Footer static bottom ====================================================================*/
-.ma-footer-static-bottom    {padding-bottom: 30px}
+#.ma-footer-static-bottom    {padding-bottom: 30px}
 .ma-footer-static-bottom li     {padding: 5px 0; display: list-item}
 .ma-footer-static-bottom li a   { background: url("../images/bullet.png") no-repeat scroll left center transparent; color: #CCCCCC;padding: 0 0 0 20px; text-decoration: none; text-transform: capitalize}
 .ma-footer-static-bottom li a:hover {color: #e93a3a}
@@ -2732,7 +2732,7 @@ border-radius: 0 !important;
 .special-product-title {background: #fff; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; width: 100%; padding: 14px 28px 6px; margin-left: -28px;}
 .special-product-title h2 {float: left; padding-right: 15px; font-family: "helveticaLT"; text-transform: capitalize;}
 .special-product-title  p.text{ padding-top: 4px; font-family: "arial"}
-.product-block-content p.text {padding: 15px 30px;  font-size: 25px; font-weight: 600;}
+.product-block-content p.text {padding: 15px 30px;  font-size: 25px; font-weight: 600;text-align:center;}
 #search_price {background-color: #e93a3a; height: 27px; line-height: 27px; width: auto; border: none; padding: 0 7px; margin-bottom: 8px; color: #fff; }
 #search_price:hover {background-color: #969696}
 #narrow-by-list #amount {color: #e93a3a !important}

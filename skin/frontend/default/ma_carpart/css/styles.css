@@ -2732,7 +2732,7 @@ border-radius: 0 !important;
 .special-product-title {background: #fff; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; width: 100%; padding: 14px 28px 6px; margin-left: -28px;}
 .special-product-title h2 {float: left; padding-right: 15px; font-family: "helveticaLT"; text-transform: capitalize;}
 .special-product-title  p.text{ padding-top: 4px; font-family: "arial"}
-.product-block-content p.text {padding: 15px 30px}
+.product-block-content p.text {padding: 15px 30px;  font-size: 25px; font-weight: 600;}
 #search_price {background-color: #e93a3a; height: 27px; line-height: 27px; width: auto; border: none; padding: 0 7px; margin-bottom: 8px; color: #fff; }
 #search_price:hover {background-color: #969696}
 #narrow-by-list #amount {color: #e93a3a !important}

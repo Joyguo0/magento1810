@@ -23,7 +23,6 @@
 /.buildpath
 /.settings/org.eclipse.php.core.prefs
 /media/catalog/product/cache
-/media
 /app/design/frontend/base/default/template/mw_developertoolbar
 /app/code/community/JakeSharp/Waterlee/Block/Topmenu.php
 /app/code/community/JakeSharp/Waterlee/Helper/Data.php

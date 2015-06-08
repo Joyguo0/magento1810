@@ -33,12 +33,12 @@ Default layout, loads most of the pages
 -->
 
     <default>
-        <!-- <reference name="top.links">
+        <reference name="top.links">
             <block type="wishlist/links" name="wishlist_link" />
             <action method="addLinkBlock">
                 <blockName>wishlist_link</blockName>
             </action>
-        </reference> -->
+        </reference>
 
         <!-- Mage_Wishlist -->
         <reference name="left">
@@ -48,14 +48,14 @@ Default layout, loads most of the pages
 
     <!--
 Customer account pages, rendered for all tabs in dashboard
-
+-->
     <customer_account>
   
         <reference name="customer_account_navigation">
             <action method="addLink" translate="label" module="wishlist" ifconfig="wishlist/general/active"><name>wishlist</name><path>wishlist/</path><label>My Wishlist</label></action>
         </reference>
     </customer_account>
--->
+
 
     <!--
 Customer account home dashboard layout
@@ -89,17 +89,17 @@ Wishlist pages
                             <title>Product Details and Comment</title>
                         </action>
                     </block>
-                    <block type="wishlist/customer_wishlist_item_column_cart" name="customer.wishlist.item.cart" template="wishlist/item/column/cart.phtml">
+                    <!--<block type="wishlist/customer_wishlist_item_column_cart" name="customer.wishlist.item.cart" template="wishlist/item/column/cart.phtml">
                         <action method="setTitle" translate="title">
                             <title>Add to Cart</title>
                         </action>
-                        <block type="wishlist/customer_wishlist_item_options" name="customer.wishlist.item.options" />
-                    </block>
+                         <block type="wishlist/customer_wishlist_item_options" name="customer.wishlist.item.options" /> 
+                    </block>-->
                     <block type="wishlist/customer_wishlist_item_column_remove" name="customer.wishlist.item.remove" template="wishlist/item/column/remove.phtml" />
                 </block>
                 <block type="core/text_list" name="customer.wishlist.buttons" as="control_buttons">
                     <block type="wishlist/customer_wishlist_button" name="customer.wishlist.button.share" template="wishlist/button/share.phtml" />
-                    <block type="wishlist/customer_wishlist_button" name="customer.wishlist.button.toCart" template="wishlist/button/tocart.phtml" />
+                   <block type="wishlist/customer_wishlist_button" name="customer.wishlist.button.toCart" template="wishlist/button/tocart.phtml" /> 
                     <block type="wishlist/customer_wishlist_button" name="customer.wishlist.button.update" template="wishlist/button/update.phtml" />
                 </block>
             </block>

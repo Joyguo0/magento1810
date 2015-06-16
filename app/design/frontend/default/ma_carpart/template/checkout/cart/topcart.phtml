@@ -10,7 +10,7 @@
                 $count = $this->helper('checkout/cart')->getSummaryCount();
                 if( $count == 1 )
                 {
-                    echo $text = $this->__('%s item', $count);
+                    echo $text = $this->__('%s item(s)', $count);
                 }
                 elseif( $count > 0 )
                 {

@@ -28,7 +28,7 @@ Lightbox.prototype = {
         borderSize: 10,
         // When grouping images this is used to write: Image # of #.
         // Change it for non-english localization
-        labelImage: "图片第",
+        labelImage: "图片",
         labelOf: "共"
     },
 
@@ -329,7 +329,7 @@ Lightbox.prototype = {
 
         // if image is part of set display 'Image x of x'
         if (this.imageArray.length > 1){
-            this.numberDisplay.update( this.options.labelImage + ' ' + (this.activeImage + 1) + ' ' + this.options.labelOf + '  ' + this.imageArray.length).show();
+            this.numberDisplay.update( '图片第' + ' ' + (this.activeImage + 1) + ' ' + '共' + '  ' + this.imageArray.length).show();
         }
 
         new Effect.Parallel(

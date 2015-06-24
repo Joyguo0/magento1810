@@ -28,8 +28,8 @@ Lightbox.prototype = {
         borderSize: 10,
         // When grouping images this is used to write: Image # of #.
         // Change it for non-english localization
-        labelImage: "Image",
-        labelOf: "of"
+        labelImage: "图片第",
+        labelOf: "共"
     },
 
     // initialize()
